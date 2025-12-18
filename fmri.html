@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Examples</title>
+    <link rel="stylesheet" href="/mainstyle/new.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/index.html">Baby schema</a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/blackbaby.html">이론</a></li>
+            <li><a href="/research.html">실험</a></li>
+            <li><a href="/why.html">캐릭터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="fmri-hero" aria-label="Glocker의 fMRI 실험">
+      <img
+        class="fmri-hero__bg"
+        src="./images/system.webp"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="fmri-hero__overlay"></div>
+      <div class="fmri__inner">
+        <div class="fmri-hero__content">
+          <h1 class="fmri-hero__title">Glocker의 Fmri 실험</h1>
+          <p class="fmri-hero__desc">
+            베이비스키마는 감정의 문제가 아니라, 뇌가 실제로 다르게 반응한다.<br />
+            Glocker와 동료 연구진은 아기 같은 얼굴 특징이 인간의 뇌 보상
+            시스템을<br />
+            어떻게 자극하는지를 fMRI를 통해 직접 확인했다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fmri-block">
+      <div class="fmri-block__inner">
+        <h2 class="fmri-block__title">Glocker의 Fmri 실험</h2>
+        <div class="fmri-block__rule"></div>
+
+        <div class="fmri-block__grid">
+          <figure class="fmri-block__figure">
+            <img src="./images/babyschema2.png" alt="베이비스키마 자극 예시" />
+          </figure>
+
+          <div class="fmri-block__cols">
+            <div class="fmri-block__col">
+              <p>
+                실험에 사용된 얼굴들은 눈의 크기, 이마의 높이,<br />
+                턱의 크기 등 베이비스키마의 핵심 요소가 <br />단계적으로 조작된
+                이미지였다.
+              </p>
+              <p>
+                이 얼굴들은 낮은 베이비스키마·중간 수준·높은
+                <br />베이비스키마로 나뉘어 무작위로 제시되었다.
+                <br />피험자들은 단순히 이미지를 바라보는 동안,<br />
+                뇌 활동이 fMRI로 측정되었다.
+              </p>
+            </div>
+
+            <div class="fmri-block__col">
+              <p>
+                그 결과, 베이비스키마 수준이 높아질수록 특정 뇌 <br />영역의
+                활성도가 유의미하게 증가했다.
+              </p>
+              <p>
+                특히 활성화된 영역은 보상, 동기, 접근 행동과 <br />관련된
+                영역이었다. 이는 ‘귀여움’이 주관적인 감상에 그치지 않고, 행동을
+                유도하는 신경학적 신호임을 <br />시사한다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fmri-images">
+      <div class="fmri-images__inner">
+        <div class="fmri-images__grid">
+          <figure class="fmri-images__figure">
+            <img
+              src="./images/brain.webp"
+              alt="베이비스키마 자극에 따른 뇌 활성"
+            />
+          </figure>
+
+          <figure class="fmri-images__figure">
+            <img
+              src="./images/braintest.png"
+              alt="영아 얼굴과 성인 얼굴에 대한 뇌 반응 비교"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="meaning-block">
+      <div class="frame1440">
+        <div class="content1280">
+          <div class="meaning-block__grid">
+            <h3 class="meaning-block__title">실험이 주는 의미</h3>
+
+            <div class="meaning-block__text">
+              베이비스키마 수준이 높은 얼굴을 볼 때, 측좌핵(Nucleus Accumbens)의
+              활성도가 뚜렷하게 증가했다. 이 영역은 보상 예측, 동기 유발, 접근
+              행동 결정과 깊이 연관된<br />
+              뇌 구조이다. <br /><br />
+              즉, 아기 같은 얼굴은 “보기 좋은 대상”이 아니라 다가가고 싶게
+              만드는 대상으로 처리된다. Glocker의 fMRI 실험은 베이비스키마가
+              단순한 시각 취향이나 문화적 산물이 아니라,<br />
+              뇌 보상 시스템을 직접 자극하고 행동 동기를 생성하며 전반적 생존
+              전략과 연결된 실제 작동하는 인지 메커니즘임을 보여준다. 우리가
+              어떤 얼굴을 보고 괜히 더 보고 싶고,<br />
+              더 다뤄주고 싶은 이유는 감정 이전에 뇌의 반응에 있다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 아래 회색 영역(원하는 페이지 스타일) -->
+      <div class="meaning-block__footer"></div>
+    </section>
+
+    <div class="side-nav" aria-label="게시물 이동">
+      <a
+        class="side-nav__btn side-nav__btn--prev"
+        href="/lorenz.html"
+        aria-label="이전 글"
+        >‹</a
+      >
+      <a
+        class="side-nav__btn side-nav__btn--next"
+        href="/research.html"
+        aria-label="다음 글"
+        >›</a
+      >
+    </div>
+  </body>
+</html>

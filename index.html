@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Examples</title>
+    <link rel="stylesheet" href="/mainstyle/new.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/index.html">Baby schema</a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/blackbaby.html">이론</a></li>
+            <li><a href="/research.html">실험</a></li>
+            <li><a href="/why.html">캐릭터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h2 class="hero-title">왜 우리는 귀여움에 끌릴까? : 베이비스키마</h2>
+        <p class="hero-desc">
+          가느다란 큰 머리 비율, 하늘코 크게 보이는 눈, 짧은 팔다리, 둥글고
+          말랑한 실루엣 등 <br />전형적인 베이비스키마 요소는 매우 강하게 귀를
+          자극한다.
+        </p>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="container intro-inner">
+        <div class="intro-text">
+          <h2 class="intro-title">베이비 스키마란 무엇인가?</h2>
+
+          <p class="intro-desc">
+            가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리, 둥글고
+            말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우 강하게 가진
+            캐릭터다. 눈, 짧은 팔다리, 둥글고 말랑한 실루엣 등 전형적인
+            베이비스키마 요소를 매우 강하게 가진 캐릭터다.
+          </p>
+
+          <a class="btn-outline" href="#">자세히보기</a>
+        </div>
+
+        <div class="intro-media">
+          <img src="../images/schema.jpg" alt="베이비 스키마 예시" />
+        </div>
+      </div>
+    </section>
+
+    <section class="research">
+      <div class="container">
+        <!-- 위: 텍스트 영역 -->
+        <div class="research-head">
+          <h2 class="research-title">
+            베이비 스키마와 관련된 실험 및 연구자료
+          </h2>
+          <p class="research-desc">
+            가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리, 둥글고
+            말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우 강하게 가진
+            캐릭터이다. 눈, 짧은 팔다리, 둥글고 말랑한 실루엣 등 전형적인
+            베이비스키마 요소를 매우 강하게 가진 캐릭터다.
+          </p>
+        </div>
+
+        <!-- 아래: 3개 이미지(가로) -->
+        <div class="research-grid">
+          <div class="research-card">
+            <img src="../images/supernormal.jpg" alt="그래프 자료" />
+          </div>
+
+          <div class="research-card research-card--mid">
+            <img src="../images/babyschema.webp" alt="아기 얼굴 비교" />
+          </div>
+
+          <div class="research-card">
+            <img src="../images/babyschema2.png" alt="착시 그림 자료" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="kawaii">
+      <div class="kawaii-overlay"></div>
+
+      <div class="kawaii-content">
+        <h2 class="kawaii-title">초유인자극 : KAWAII 자극</h2>
+
+        <p class="kawaii-desc">
+          가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리, 둥글고
+          말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우 강하게 가진
+          캐릭터다.
+        </p>
+
+        <a class="kawaii-btn" href="#">자세히보기</a>
+      </div>
+    </section>
+
+    <section class="cute">
+      <div class="container">
+        <!-- 섹션 헤더 (제목 + 화살표 버튼) -->
+        <div class="cute-head">
+          <h2 class="cute-title">귀여움을 느끼는 요소</h2>
+
+          <div class="cute-nav">
+            <button class="cute-arrow" type="button" aria-label="이전">
+              ‹
+            </button>
+            <button class="cute-arrow" type="button" aria-label="다음">
+              ›
+            </button>
+          </div>
+        </div>
+
+        <!-- 본문 2칼럼 -->
+        <div class="cute-body">
+          <!-- 왼쪽: 이미지 -->
+          <div class="cute-left">
+            <img
+              class="cute-image"
+              src="../images/minions.png"
+              alt="미니언즈"
+            />
+          </div>
+
+          <!-- 오른쪽: 아코디언 카드 -->
+          <div class="cute-right">
+            <div class="cute-card" id="cuteAccordion">
+              <!-- 1) 미니언즈 (처음엔 열림) -->
+              <div class="acc-item is-open">
+                <button class="acc-row" type="button" aria-expanded="true">
+                  <span class="acc-title">미니언즈</span>
+                  <span class="acc-icon" aria-hidden="true">—</span>
+                </button>
+
+                <div class="acc-panel">
+                  <p class="acc-content">
+                    가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리,
+                    둥글고 말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우
+                    강하게 가진 캐릭터이다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2) 케로로 -->
+              <div class="acc-item">
+                <button class="acc-row" type="button" aria-expanded="false">
+                  <span class="acc-title">케로로</span>
+                  <span class="acc-icon" aria-hidden="true">+</span>
+                </button>
+
+                <div class="acc-panel">
+                  <p class="acc-content">
+                    케로로는 큰 눈, 단순한 얼굴 구성, 짧은 팔다리, 둥근 머리 등
+                    베이비스키마 요소를 반영하는 캐릭터이다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3) 듀...가나디 -->
+              <div class="acc-item">
+                <button class="acc-row" type="button" aria-expanded="false">
+                  <span class="acc-title">듀...가나디</span>
+                  <span class="acc-icon" aria-hidden="true">+</span>
+                </button>
+
+                <div class="acc-panel">
+                  <p class="acc-content">
+                    가나디는 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리,
+                    둥글고 말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우
+                    강하게 가진 캐릭터다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 4) 폭스바겐 뉴비틀 -->
+              <div class="acc-item">
+                <button class="acc-row" type="button" aria-expanded="false">
+                  <span class="acc-title">폭스바겐 뉴비틀</span>
+                  <span class="acc-icon" aria-hidden="true">+</span>
+                </button>
+
+                <div class="acc-panel">
+                  <p class="acc-content">
+                    뉴비틀은 자동차임에도 불구하고 눈처럼 보이는 큰 원형
+                    헤드라이트, 둥근 실루엣, 짧고 뭉툭한 전면부 등
+                    베이비스키마와 유사한 형태 언어를 가진 디자인이다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const accordion = document.getElementById("cuteAccordion");
+      const items = accordion.querySelectorAll(".acc-item");
+
+      items.forEach((item) => {
+        const btn = item.querySelector(".acc-row");
+        const icon = item.querySelector(".acc-icon");
+
+        btn.addEventListener("click", () => {
+          const isOpen = item.classList.contains("is-open");
+
+          // ✅ 한 번에 하나만 열리게 하고 싶으면 아래 4줄 유지
+          items.forEach((other) => {
+            other.classList.remove("is-open");
+            other
+              .querySelector(".acc-row")
+              .setAttribute("aria-expanded", "false");
+            other.querySelector(".acc-icon").textContent = "+";
+          });
+
+          // 지금 눌린 애를 토글
+          if (!isOpen) {
+            item.classList.add("is-open");
+            btn.setAttribute("aria-expanded", "true");
+            icon.textContent = "—";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

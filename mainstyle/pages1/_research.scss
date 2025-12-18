@@ -1,0 +1,269 @@
+.hero {
+  position: relative;
+  height: 676px; /* 스샷 비율 느낌 */
+  min-height: 520px;
+  max-height: 76vh; /* 너무 커지지 않게 */
+  overflow: hidden;
+  background: #111;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 20%;
+}
+
+.hero__inner {
+  position: relative; /* overlay 위로 올라오게 */
+  display: flex;
+  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
+  width: min(1280px, calc(100% - 160px)); /* 좌우 80 유지 */
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  /* 아래쪽 텍스트 가독성용 어두운 그라데이션 */
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 62%) 0%,
+    rgb(0 0 0 / 38%) 35%,
+    rgb(0 0 0 / 10%) 70%,
+    rgb(0 0 0 / 0%) 100%
+  );
+}
+
+.hero__content {
+  position: absolute;
+  bottom: clamp(20px, 5vw, 56px);
+  z-index: 2;
+  max-width: 720px;
+  color: #fff;
+  text-shadow: 0 2px 16px rgb(0 0 0 / 50%);
+}
+
+.hero__title {
+  margin: 0 0 14px;
+  font-size: clamp(40px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero__desc {
+  margin: 0;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.75;
+  color: rgb(255 255 255 / 88%);
+}
+
+/* 모바일에서 높이/여백 조금 압축 */
+@media (width <= 640px) {
+  .hero {
+    min-height: 460px;
+  }
+
+  .hero__content {
+    max-width: 92vw;
+  }
+}
+
+.research-block1 {
+  max-width: 1280px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.research-block__title {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.research-block__rule {
+  height: 2px;
+  margin-bottom: 32px;
+  background: #e8e8e8;
+}
+
+.research-block__grid {
+  display: grid;
+
+  /* 왼쪽 이미지 + 오른쪽 2컬럼 텍스트 */
+  grid-template-columns: 480px 1fr 1fr;
+  gap: 24px 58px;
+
+  /* 스샷 느낌: 이미지↔텍스트 사이 넓게, 텍스트↔텍스트는 조금 좁게 */
+
+  align-items: start;
+}
+
+.research-block__figure {
+  width: 100%;
+  height: 240px; /* 스샷에 480x240 느낌 */
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ✅ “피그마처럼 안 잘리게” = contain 추천 (도식/라인아트는 이게 정답) */
+.research-block__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* 텍스트 */
+.research-block__col {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111;
+}
+
+.research-block__col p {
+  margin: 0 0 16px;
+}
+
+/* 반응형: 좁아지면 1열로 쌓기 */
+@media (width <= 1024px) {
+  .research-block__grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .research-block__figure {
+    height: 280px;
+  }
+}
+
+.figure-split1 {
+  padding: 0 24px 120px;
+  background: #fff;
+}
+
+.figure-split__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  /* 피그마에서 1280 x 740 느낌 */
+  align-items: stretch;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.figure-split__panel {
+  display: flex;
+  height: 740px; /* 피그마 Hug 740에 맞춤 */
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+}
+
+.figure-split__panel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* ✅ 도표/캡처는 cover 쓰면 무조건 잘림 → contain이 정답 */
+  object-fit: contain;
+
+  /* 왼쪽 그래프는 왼쪽 정렬이 더 자연스러움 */
+  object-position: center;
+}
+
+/* 반응형: 좁아지면 1열로 */
+@media (width <= 1024px) {
+  .figure-split__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .figure-split__panel {
+    height: 520px;
+  }
+}
+
+.meaning1 {
+  display: grid;
+
+  /* 제목 고정폭 + 본문 가변 */
+  grid-template-columns: 254px 1fr;
+
+  /* 피그마에서 찍힌 값 */
+  column-gap: 120px;
+  align-items: start;
+  max-width: 1280px;
+  padding: 0 0 120px;
+  margin: 0 auto;
+}
+
+.meaning__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.meaning__content {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111;
+}
+
+.meaning__content p {
+  margin: 0 0 18px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 900; // 헤더(1000)보다 아래로 두고 싶으면 이렇게
+  width: 100%;
+  pointer-events: none; // 전체는 클릭 막고
+  transform: translateY(-50%);
+}
+
+.side-nav__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  pointer-events: auto; // 버튼만 클릭 되게
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+
+  // 선택: 살짝 그림자
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.side-nav__btn--prev {
+  left: 24px;
+}
+
+.side-nav__btn--next {
+  right: 24px;
+}
+
+.side-nav__btn:hover {
+  transform: scale(1.03);
+}

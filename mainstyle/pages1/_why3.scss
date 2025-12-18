@@ -1,0 +1,139 @@
+.why-hero {
+  padding-top: 120px;
+}
+
+.why-container {
+  max-width: 1280px; /* 1440 - 80*2 */
+  margin: 0 auto;
+}
+
+.why-text {
+  max-width: 722px; /* Figma Hug */
+}
+
+.why-title {
+  margin: 0 0 20px; /* 제목-본문 간격 */
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.why-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 리스트 전체: 위아래 구분선 */
+.why-list {
+  padding-bottom: 200px;
+  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+}
+
+/* 아이템 하나 */
+.why-item1 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+.why-item2 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+/* 텍스트 */
+.why-item__title {
+  margin: 0 0 20px; /* 제목-본문 20 */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.why-item__desc {
+  max-width: 680px; /* Hug 680 */
+  margin: 0 0 64px; /* 본문-버튼 64 */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #8c8c8c;
+}
+
+/* 버튼(116 x 41 Hug) */
+.why-item__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 41px;
+  font-size: 18px;
+  color: #8c8c8c;
+  text-decoration: none;
+  border: 1px solid #bfbfbf;
+  border-radius: 999px;
+}
+
+/* 이미지 영역(522 x 380) */
+.why-item__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 522px;
+  height: 380px;
+}
+
+.why-item__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+// 여기부터
+
+/* 상단 가로 라인 + 버튼 영역 */
+.why-list-top {
+  position: relative;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* 버튼 묶음 */
+.why-list-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  transform: translateY(-50%);
+}
+
+/* 버튼 하나 */
+.why-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.why-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 혹시 튀어나오면 강제 */
+.why-item {
+  box-sizing: border-box;
+  width: 100%;
+}

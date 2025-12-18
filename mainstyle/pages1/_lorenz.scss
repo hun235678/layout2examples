@@ -1,0 +1,374 @@
+body {
+  color: #fff;
+}
+
+root {
+  color-scheme: light;
+}
+
+.hero-babyschema {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* 스샷 기준 */
+  height: 480px; /* 스샷 기준 */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0; /* 필요하면 조절 */
+}
+
+/* 배경 이미지: 섹션을 꽉 채우게 */
+.hero-babyschema__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
+  object-position: center; /* 중앙 기준 */
+  transform: translateZ(0); /* 살짝 렌더링 안정 */
+}
+
+/* 아래쪽 어둡게 (텍스트 가독성) */
+.hero-babyschema__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 55%) 0%,
+    rgb(0 0 0 / 35%) 35%,
+    rgb(0 0 0 / 0%) 70%
+  );
+}
+
+.hero__inner1 {
+  position: relative; /* overlay 위로 올라오게 */
+  display: flex;
+  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
+  width: min(1280px, calc(100% - 160px)); /* 좌우 80 유지 */
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* 텍스트 레이어 */
+.hero-babyschema__content {
+  position: absolute;
+  bottom: 48px;
+  left: 64px;
+  z-index: 1;
+  max-width: 760px;
+  color: #fff;
+}
+
+.hero-babyschema__content1 {
+  position: absolute;
+  bottom: 48px;
+  z-index: 1;
+  max-width: 760px;
+  color: #fff;
+}
+
+.hero-babyschema__content1 h1 {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.hero-babyschema__content1 p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+  opacity: 0.95;
+}
+
+/* 반응형: 모바일에서 패딩/폰트 줄이기 */
+@media (width <= 768px) {
+  .hero-babyschema {
+    height: 420px;
+  }
+
+  .hero-babyschema__content {
+    right: 20px;
+    bottom: 28px;
+    left: 20px;
+    max-width: none;
+  }
+
+  .hero-babyschema__content h1 {
+    font-size: 32px;
+  }
+}
+
+// 여기까지 hero
+
+.baby-schema-section {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* 위 섹션과 120px */
+}
+
+.baby-schema-title1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* ✅ 피그마 의도: 타이틀 아래 가로 divider */
+.baby-schema-divider1 {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 32px; /* 타이틀-선 간격 / 선-콘텐츠 간격 */
+  background: #cfcfcf; /* 스샷처럼 연회색 */
+}
+
+.baby-schema-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.baby-schema-image {
+  flex-shrink: 0;
+  width: 480px; /* 피그마: 480 */
+  height: 320px; /* 피그마: 320 */
+  margin-right: 56px; /* 피그마: 56 */
+}
+
+.baby-schema-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.baby-schema-text {
+  display: grid;
+  grid-template-columns: 360px 360px; /* 피그마: 360 + 360 */
+  gap: 24px; /* 피그마: 24 */
+  padding-top: 8px; /* 스샷처럼 텍스트가 살짝 내려앉게 */
+}
+
+.baby-schema-text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-section {
+    padding: 0 20px;
+  }
+
+  .baby-schema-text {
+    grid-template-columns: 1fr 1fr; /* 좁아지면 유동 */
+  }
+}
+
+@media (width <= 900px) {
+  .baby-schema-content {
+    flex-direction: column;
+  }
+
+  .baby-schema-image {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+
+  .baby-schema-image img {
+    height: auto;
+  }
+
+  .baby-schema-text {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 0;
+  }
+}
+
+/* 전체 섹션 */
+.baby-schema-analysis {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* ⬅️ 위 콘텐츠와 120px */
+}
+
+/* 내부 레이아웃 */
+.baby-schema-analysis-inner {
+  display: flex;
+  gap: 32px; /* 피그마: 32 */
+  align-items: stretch;
+}
+
+/* 왼쪽: 6컷 이미지 */
+.analysis-image-left {
+  flex-shrink: 0;
+  width: 624px; /* 피그마 기준 */
+  height: 740px;
+  background: #fff;
+  border: 1px solid #d0d0d0; /* 피그마 테두리 */
+}
+
+.analysis-image-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 오른쪽: 얼굴 비율 강조 이미지 */
+.analysis-image-right {
+  flex: 1;
+  height: 740px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+}
+
+.analysis-image-right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-analysis {
+    padding: 0 20px;
+  }
+}
+
+@media (width <= 900px) {
+  .baby-schema-analysis-inner {
+    flex-direction: column;
+  }
+
+  .analysis-image-left,
+  .analysis-image-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .analysis-image-left img,
+  .analysis-image-right img {
+    height: auto;
+  }
+}
+
+.baby-schema-meaning {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* ⬅ 위 콘텐츠와 120px */
+}
+
+/* 내부 정렬 */
+.baby-schema-meaning-inner {
+  display: flex;
+  align-items: flex-start;
+  width: 1008px; /* 피그마 기준 */
+}
+
+/* 제목 */
+.baby-schema-meaning-title {
+  flex-shrink: 0;
+  width: 254px; /* Hug 느낌 고정 */
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* 본문 */
+.baby-schema-meaning-text {
+  width: 634px;
+  margin-top: 4px; /* 베이스라인 살짝 맞춤 */
+  margin-left: 120px; /* 피그마: 제목과 본문 간격 */
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-meaning {
+    padding: 0 20px;
+  }
+
+  .baby-schema-meaning-inner {
+    width: 100%;
+  }
+}
+
+@media (width <= 900px) {
+  .baby-schema-meaning-inner {
+    flex-direction: column;
+  }
+
+  .baby-schema-meaning-text {
+    width: 100%;
+    margin-top: 18px;
+    margin-left: 0;
+  }
+}
+
+/* 텍스트블록 -> 이미지 간격 120px */
+.kawaii-image-wrap {
+  margin-top: 120px;
+}
+
+/* 1440x580 */
+.kawaii-image {
+  display: block;
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 900; // 헤더(1000)보다 아래로 두고 싶으면 이렇게
+  width: 100%;
+  pointer-events: none; // 전체는 클릭 막고
+  transform: translateY(-50%);
+}
+
+.side-nav__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  pointer-events: auto; // 버튼만 클릭 되게
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+
+  // 선택: 살짝 그림자
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.side-nav__btn--prev {
+  left: 24px;
+}
+
+.side-nav__btn--next {
+  right: 24px;
+}
+
+.side-nav__btn:hover {
+  transform: scale(1.03);
+}

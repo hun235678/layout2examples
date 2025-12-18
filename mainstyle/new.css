@@ -1,0 +1,3098 @@
+@charset "UTF-8";
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
+:root {
+  --font-base: "Pretendard Variable";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  min-block-size: 100vh;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+select,
+label {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a:not([class]) {
+  color: currentcolor;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+audio,
+canvas,
+embed,
+img,
+object,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+option,
+select,
+textarea {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+:root {
+  --tone-red-0: oklch(0% 0 30deg);
+  --tone-red-1: oklch(7.7426368268% 0.0130861467 30deg);
+  --tone-red-2: oklch(11.3796204055% 0.0192331612 30deg);
+  --tone-red-3: oklch(14.2546399644% 0.0240923492 30deg);
+  --tone-red-4: oklch(16.725020619% 0.0282676405 30deg);
+  --tone-red-5: oklch(18.9323950471% 0.0319984142 30deg);
+  --tone-red-6: oklch(20.9505360307% 0.0354093567 30deg);
+  --tone-red-7: oklch(22.8237919577% 0.038575423 30deg);
+  --tone-red-8: oklch(24.5813396878% 0.0415459262 30deg);
+  --tone-red-9: oklch(26.2436124877% 0.0443554014 30deg);
+  --tone-red-10: oklch(27.8255940221% 0.047029173 30deg);
+  --tone-red-11: oklch(29.3386671907% 0.0495864798 30deg);
+  --tone-red-12: oklch(30.791725436% 0.0520423528 30deg);
+  --tone-red-13: oklch(32.191877531% 0.0544088071 30deg);
+  --tone-red-14: oklch(33.5449142848% 0.0566956298 30deg);
+  --tone-red-15: oklch(34.8556287861% 0.0589109219 30deg);
+  --tone-red-16: oklch(36.1280428055% 0.0610614808 30deg);
+  --tone-red-17: oklch(37.3655709739% 0.0631530777 30deg);
+  --tone-red-18: oklch(38.5711424751% 0.0651906633 30deg);
+  --tone-red-19: oklch(39.7472929842% 0.0671785234 30deg);
+  --tone-red-20: oklch(40.8962353023% 0.0691203977 30deg);
+  --tone-red-21: oklch(42.0199144372% 0.0710195737 30deg);
+  --tone-red-22: oklch(43.1200511276% 0.0728789597 30deg);
+  --tone-red-23: oklch(44.1981766493% 0.0747011436 30deg);
+  --tone-red-24: oklch(45.25566095% 0.076488441 30deg);
+  --tone-red-25: oklch(46.2937356144% 0.0782429334 30deg);
+  --tone-red-26: oklch(47.3135127784% 0.0799665005 30deg);
+  --tone-red-27: oklch(48.3160008336% 0.0816608465 30deg);
+  --tone-red-28: oklch(49.3021175648% 0.0833275226 30deg);
+  --tone-red-29: oklch(50.2727012168% 0.0849679457 30deg);
+  --tone-red-30: oklch(51.2285198768% 0.0865834139 30deg);
+  --tone-red-31: oklch(52.1702794758% 0.0881751202 30deg);
+  --tone-red-32: oklch(53.0986306496% 0.0897441645 30deg);
+  --tone-red-33: oklch(54.0141746533% 0.0912915628 30deg);
+  --tone-red-34: oklch(54.9174684839% 0.0928182566 30deg);
+  --tone-red-35: oklch(55.8090293373% 0.09432512 30deg);
+  --tone-red-36: oklch(56.6893385022% 0.0958129665 30deg);
+  --tone-red-37: oklch(57.558844776% 0.0972825546 30deg);
+  --tone-red-38: oklch(58.4179674734% 0.0987345929 30deg);
+  --tone-red-39: oklch(59.2670990837% 0.1001697449 30deg);
+  --tone-red-40: oklch(60.106607628% 0.1015886326 30deg);
+  --tone-red-41: oklch(60.9368387549% 0.1029918401 30deg);
+  --tone-red-42: oklch(61.7581176108% 0.1043799171 30deg);
+  --tone-red-43: oklch(62.5707505131% 0.1057533811 30deg);
+  --tone-red-44: oklch(63.3750264509% 0.1071127208 30deg);
+  --tone-red-45: oklch(64.1712184355% 0.1084583974 30deg);
+  --tone-red-46: oklch(64.9595847172% 0.1097908474 30deg);
+  --tone-red-47: oklch(65.7403698863% 0.1111104843 30deg);
+  --tone-red-48: oklch(66.5138058689% 0.1124177001 30deg);
+  --tone-red-49: oklch(67.2801128326% 0.1137128668 30deg);
+  --tone-red-50: oklch(68.0395000087% 0.114996338 30deg);
+  --tone-red-51: oklch(68.7921664432% 0.1162684503 30deg);
+  --tone-red-52: oklch(69.5383016812% 0.117529524 30deg);
+  --tone-red-53: oklch(70.2780863941% 0.1187798643 30deg);
+  --tone-red-54: oklch(71.011692954% 0.1199516154 30deg);
+  --tone-red-55: oklch(71.7392859608% 0.1169408857 30deg);
+  --tone-red-56: oklch(72.4610227272% 0.1139543887 30deg);
+  --tone-red-57: oklch(73.1770537252% 0.1109915018 30deg);
+  --tone-red-58: oklch(73.8875229981% 0.108051629 30deg);
+  --tone-red-59: oklch(74.5925685407% 0.1051341991 30deg);
+  --tone-red-60: oklch(75.2923226512% 0.1022386649 30deg);
+  --tone-red-61: oklch(75.9869122571% 0.099364501 30deg);
+  --tone-red-62: oklch(76.6764592173% 0.0965112032 30deg);
+  --tone-red-63: oklch(77.361080603% 0.0936782872 30deg);
+  --tone-red-64: oklch(78.0408889583% 0.0908652871 30deg);
+  --tone-red-65: oklch(78.7159925432% 0.088071755 30deg);
+  --tone-red-66: oklch(79.3864955597% 0.0852972598 30deg);
+  --tone-red-67: oklch(80.0524983632% 0.0825413861 30deg);
+  --tone-red-68: oklch(80.7140976593% 0.0798037338 30deg);
+  --tone-red-69: oklch(81.3713866883% 0.0770839172 30deg);
+  --tone-red-70: oklch(82.0244553975% 0.0743815639 30deg);
+  --tone-red-71: oklch(82.673390603% 0.0716963147 30deg);
+  --tone-red-72: oklch(83.3182761409% 0.0690278229 30deg);
+  --tone-red-73: oklch(83.9591930095% 0.0663757531 30deg);
+  --tone-red-74: oklch(84.5962195028% 0.0637397814 30deg);
+  --tone-red-75: oklch(85.2294313362% 0.0611195945 30deg);
+  --tone-red-76: oklch(85.8589017643% 0.0585148893 30deg);
+  --tone-red-77: oklch(86.4847016922% 0.0559253723 30deg);
+  --tone-red-78: oklch(87.1068997805% 0.0533507595 30deg);
+  --tone-red-79: oklch(87.7255625439% 0.0507907757 30deg);
+  --tone-red-80: oklch(88.3407544446% 0.048245154 30deg);
+  --tone-red-81: oklch(88.9525379804% 0.0457136359 30deg);
+  --tone-red-82: oklch(89.5609737683% 0.0431959706 30deg);
+  --tone-red-83: oklch(90.1661206227% 0.0406919147 30deg);
+  --tone-red-84: oklch(90.7680356306% 0.0382012319 30deg);
+  --tone-red-85: oklch(91.3667742219% 0.0357236929 30deg);
+  --tone-red-86: oklch(91.9623902366% 0.0332590749 30deg);
+  --tone-red-87: oklch(92.5549359882% 0.0308071614 30deg);
+  --tone-red-88: oklch(93.1444623238% 0.0283677421 30deg);
+  --tone-red-89: oklch(93.7310186818% 0.0259406124 30deg);
+  --tone-red-90: oklch(94.314653146% 0.0235255732 30deg);
+  --tone-red-91: oklch(94.8954124972% 0.021122431 30deg);
+  --tone-red-92: oklch(95.4733422628% 0.0187309975 30deg);
+  --tone-red-93: oklch(96.0484867632% 0.0163510893 30deg);
+  --tone-red-94: oklch(96.6208891568% 0.0139825276 30deg);
+  --tone-red-95: oklch(97.190591482% 0.0116251387 30deg);
+  --tone-red-96: oklch(97.7576346981% 0.009278753 30deg);
+  --tone-red-97: oklch(98.3220587238% 0.0069432053 30deg);
+  --tone-red-98: oklch(98.8839024742% 0.0046183346 30deg);
+  --tone-red-99: oklch(99.4432038957% 0.0023039839 30deg);
+  --tone-red-100: oklch(100% 0 30deg);
+  --tone-green-0: oklch(0% 0 150deg);
+  --tone-green-1: oklch(7.7426368268% 0.0130861467 150deg);
+  --tone-green-2: oklch(11.3796204055% 0.0192331612 150deg);
+  --tone-green-3: oklch(14.2546399644% 0.0240923492 150deg);
+  --tone-green-4: oklch(16.725020619% 0.0282676405 150deg);
+  --tone-green-5: oklch(18.9323950471% 0.0319984142 150deg);
+  --tone-green-6: oklch(20.9505360307% 0.0354093567 150deg);
+  --tone-green-7: oklch(22.8237919577% 0.038575423 150deg);
+  --tone-green-8: oklch(24.5813396878% 0.0415459262 150deg);
+  --tone-green-9: oklch(26.2436124877% 0.0443554014 150deg);
+  --tone-green-10: oklch(27.8255940221% 0.047029173 150deg);
+  --tone-green-11: oklch(29.3386671907% 0.0495864798 150deg);
+  --tone-green-12: oklch(30.791725436% 0.0520423528 150deg);
+  --tone-green-13: oklch(32.191877531% 0.0544088071 150deg);
+  --tone-green-14: oklch(33.5449142848% 0.0566956298 150deg);
+  --tone-green-15: oklch(34.8556287861% 0.0589109219 150deg);
+  --tone-green-16: oklch(36.1280428055% 0.0610614808 150deg);
+  --tone-green-17: oklch(37.3655709739% 0.0631530777 150deg);
+  --tone-green-18: oklch(38.5711424751% 0.0651906633 150deg);
+  --tone-green-19: oklch(39.7472929842% 0.0671785234 150deg);
+  --tone-green-20: oklch(40.8962353023% 0.0691203977 150deg);
+  --tone-green-21: oklch(42.0199144372% 0.0710195737 150deg);
+  --tone-green-22: oklch(43.1200511276% 0.0728789597 150deg);
+  --tone-green-23: oklch(44.1981766493% 0.0747011436 150deg);
+  --tone-green-24: oklch(45.25566095% 0.076488441 150deg);
+  --tone-green-25: oklch(46.2937356144% 0.0782429334 150deg);
+  --tone-green-26: oklch(47.3135127784% 0.0799665005 150deg);
+  --tone-green-27: oklch(48.3160008336% 0.0816608465 150deg);
+  --tone-green-28: oklch(49.3021175648% 0.0833275226 150deg);
+  --tone-green-29: oklch(50.2727012168% 0.0849679457 150deg);
+  --tone-green-30: oklch(51.2285198768% 0.0865834139 150deg);
+  --tone-green-31: oklch(52.1702794758% 0.0881751202 150deg);
+  --tone-green-32: oklch(53.0986306496% 0.0897441645 150deg);
+  --tone-green-33: oklch(54.0141746533% 0.0912915628 150deg);
+  --tone-green-34: oklch(54.9174684839% 0.0928182566 150deg);
+  --tone-green-35: oklch(55.8090293373% 0.09432512 150deg);
+  --tone-green-36: oklch(56.6893385022% 0.0958129665 150deg);
+  --tone-green-37: oklch(57.558844776% 0.0972825546 150deg);
+  --tone-green-38: oklch(58.4179674734% 0.0987345929 150deg);
+  --tone-green-39: oklch(59.2670990837% 0.1001697449 150deg);
+  --tone-green-40: oklch(60.106607628% 0.1015886326 150deg);
+  --tone-green-41: oklch(60.9368387549% 0.1029918401 150deg);
+  --tone-green-42: oklch(61.7581176108% 0.1043799171 150deg);
+  --tone-green-43: oklch(62.5707505131% 0.1057533811 150deg);
+  --tone-green-44: oklch(63.3750264509% 0.1071127208 150deg);
+  --tone-green-45: oklch(64.1712184355% 0.1084583974 150deg);
+  --tone-green-46: oklch(64.9595847172% 0.1097908474 150deg);
+  --tone-green-47: oklch(65.7403698863% 0.1111104843 150deg);
+  --tone-green-48: oklch(66.5138058689% 0.1124177001 150deg);
+  --tone-green-49: oklch(67.2801128326% 0.1137128668 150deg);
+  --tone-green-50: oklch(68.0395000087% 0.114996338 150deg);
+  --tone-green-51: oklch(68.7921664432% 0.1162684503 150deg);
+  --tone-green-52: oklch(69.5383016812% 0.117529524 150deg);
+  --tone-green-53: oklch(70.2780863941% 0.1187798643 150deg);
+  --tone-green-54: oklch(71.011692954% 0.1199516154 150deg);
+  --tone-green-55: oklch(71.7392859608% 0.1169408857 150deg);
+  --tone-green-56: oklch(72.4610227272% 0.1139543887 150deg);
+  --tone-green-57: oklch(73.1770537252% 0.1109915018 150deg);
+  --tone-green-58: oklch(73.8875229981% 0.108051629 150deg);
+  --tone-green-59: oklch(74.5925685407% 0.1051341991 150deg);
+  --tone-green-60: oklch(75.2923226512% 0.1022386649 150deg);
+  --tone-green-61: oklch(75.9869122571% 0.099364501 150deg);
+  --tone-green-62: oklch(76.6764592173% 0.0965112032 150deg);
+  --tone-green-63: oklch(77.361080603% 0.0936782872 150deg);
+  --tone-green-64: oklch(78.0408889583% 0.0908652871 150deg);
+  --tone-green-65: oklch(78.7159925432% 0.088071755 150deg);
+  --tone-green-66: oklch(79.3864955597% 0.0852972598 150deg);
+  --tone-green-67: oklch(80.0524983632% 0.0825413861 150deg);
+  --tone-green-68: oklch(80.7140976593% 0.0798037338 150deg);
+  --tone-green-69: oklch(81.3713866883% 0.0770839172 150deg);
+  --tone-green-70: oklch(82.0244553975% 0.0743815639 150deg);
+  --tone-green-71: oklch(82.673390603% 0.0716963147 150deg);
+  --tone-green-72: oklch(83.3182761409% 0.0690278229 150deg);
+  --tone-green-73: oklch(83.9591930095% 0.0663757531 150deg);
+  --tone-green-74: oklch(84.5962195028% 0.0637397814 150deg);
+  --tone-green-75: oklch(85.2294313362% 0.0611195945 150deg);
+  --tone-green-76: oklch(85.8589017643% 0.0585148893 150deg);
+  --tone-green-77: oklch(86.4847016922% 0.0559253723 150deg);
+  --tone-green-78: oklch(87.1068997805% 0.0533507595 150deg);
+  --tone-green-79: oklch(87.7255625439% 0.0507907757 150deg);
+  --tone-green-80: oklch(88.3407544446% 0.048245154 150deg);
+  --tone-green-81: oklch(88.9525379804% 0.0457136359 150deg);
+  --tone-green-82: oklch(89.5609737683% 0.0431959706 150deg);
+  --tone-green-83: oklch(90.1661206227% 0.0406919147 150deg);
+  --tone-green-84: oklch(90.7680356306% 0.0382012319 150deg);
+  --tone-green-85: oklch(91.3667742219% 0.0357236929 150deg);
+  --tone-green-86: oklch(91.9623902366% 0.0332590749 150deg);
+  --tone-green-87: oklch(92.5549359882% 0.0308071614 150deg);
+  --tone-green-88: oklch(93.1444623238% 0.0283677421 150deg);
+  --tone-green-89: oklch(93.7310186818% 0.0259406124 150deg);
+  --tone-green-90: oklch(94.314653146% 0.0235255732 150deg);
+  --tone-green-91: oklch(94.8954124972% 0.021122431 150deg);
+  --tone-green-92: oklch(95.4733422628% 0.0187309975 150deg);
+  --tone-green-93: oklch(96.0484867632% 0.0163510893 150deg);
+  --tone-green-94: oklch(96.6208891568% 0.0139825276 150deg);
+  --tone-green-95: oklch(97.190591482% 0.0116251387 150deg);
+  --tone-green-96: oklch(97.7576346981% 0.009278753 150deg);
+  --tone-green-97: oklch(98.3220587238% 0.0069432053 150deg);
+  --tone-green-98: oklch(98.8839024742% 0.0046183346 150deg);
+  --tone-green-99: oklch(99.4432038957% 0.0023039839 150deg);
+  --tone-green-100: oklch(100% 0 150deg);
+  --tone-blue-0: oklch(0% 0 270deg);
+  --tone-blue-1: oklch(7.7426368268% 0.0130861467 270deg);
+  --tone-blue-2: oklch(11.3796204055% 0.0192331612 270deg);
+  --tone-blue-3: oklch(14.2546399644% 0.0240923492 270deg);
+  --tone-blue-4: oklch(16.725020619% 0.0282676405 270deg);
+  --tone-blue-5: oklch(18.9323950471% 0.0319984142 270deg);
+  --tone-blue-6: oklch(20.9505360307% 0.0354093567 270deg);
+  --tone-blue-7: oklch(22.8237919577% 0.038575423 270deg);
+  --tone-blue-8: oklch(24.5813396878% 0.0415459262 270deg);
+  --tone-blue-9: oklch(26.2436124877% 0.0443554014 270deg);
+  --tone-blue-10: oklch(27.8255940221% 0.047029173 270deg);
+  --tone-blue-11: oklch(29.3386671907% 0.0495864798 270deg);
+  --tone-blue-12: oklch(30.791725436% 0.0520423528 270deg);
+  --tone-blue-13: oklch(32.191877531% 0.0544088071 270deg);
+  --tone-blue-14: oklch(33.5449142848% 0.0566956298 270deg);
+  --tone-blue-15: oklch(34.8556287861% 0.0589109219 270deg);
+  --tone-blue-16: oklch(36.1280428055% 0.0610614808 270deg);
+  --tone-blue-17: oklch(37.3655709739% 0.0631530777 270deg);
+  --tone-blue-18: oklch(38.5711424751% 0.0651906633 270deg);
+  --tone-blue-19: oklch(39.7472929842% 0.0671785234 270deg);
+  --tone-blue-20: oklch(40.8962353023% 0.0691203977 270deg);
+  --tone-blue-21: oklch(42.0199144372% 0.0710195737 270deg);
+  --tone-blue-22: oklch(43.1200511276% 0.0728789597 270deg);
+  --tone-blue-23: oklch(44.1981766493% 0.0747011436 270deg);
+  --tone-blue-24: oklch(45.25566095% 0.076488441 270deg);
+  --tone-blue-25: oklch(46.2937356144% 0.0782429334 270deg);
+  --tone-blue-26: oklch(47.3135127784% 0.0799665005 270deg);
+  --tone-blue-27: oklch(48.3160008336% 0.0816608465 270deg);
+  --tone-blue-28: oklch(49.3021175648% 0.0833275226 270deg);
+  --tone-blue-29: oklch(50.2727012168% 0.0849679457 270deg);
+  --tone-blue-30: oklch(51.2285198768% 0.0865834139 270deg);
+  --tone-blue-31: oklch(52.1702794758% 0.0881751202 270deg);
+  --tone-blue-32: oklch(53.0986306496% 0.0897441645 270deg);
+  --tone-blue-33: oklch(54.0141746533% 0.0912915628 270deg);
+  --tone-blue-34: oklch(54.9174684839% 0.0928182566 270deg);
+  --tone-blue-35: oklch(55.8090293373% 0.09432512 270deg);
+  --tone-blue-36: oklch(56.6893385022% 0.0958129665 270deg);
+  --tone-blue-37: oklch(57.558844776% 0.0972825546 270deg);
+  --tone-blue-38: oklch(58.4179674734% 0.0987345929 270deg);
+  --tone-blue-39: oklch(59.2670990837% 0.1001697449 270deg);
+  --tone-blue-40: oklch(60.106607628% 0.1015886326 270deg);
+  --tone-blue-41: oklch(60.9368387549% 0.1029918401 270deg);
+  --tone-blue-42: oklch(61.7581176108% 0.1043799171 270deg);
+  --tone-blue-43: oklch(62.5707505131% 0.1057533811 270deg);
+  --tone-blue-44: oklch(63.3750264509% 0.1071127208 270deg);
+  --tone-blue-45: oklch(64.1712184355% 0.1084583974 270deg);
+  --tone-blue-46: oklch(64.9595847172% 0.1097908474 270deg);
+  --tone-blue-47: oklch(65.7403698863% 0.1111104843 270deg);
+  --tone-blue-48: oklch(66.5138058689% 0.1124177001 270deg);
+  --tone-blue-49: oklch(67.2801128326% 0.1137128668 270deg);
+  --tone-blue-50: oklch(68.0395000087% 0.114996338 270deg);
+  --tone-blue-51: oklch(68.7921664432% 0.1162684503 270deg);
+  --tone-blue-52: oklch(69.5383016812% 0.117529524 270deg);
+  --tone-blue-53: oklch(70.2780863941% 0.1187798643 270deg);
+  --tone-blue-54: oklch(71.011692954% 0.1199516154 270deg);
+  --tone-blue-55: oklch(71.7392859608% 0.1169408857 270deg);
+  --tone-blue-56: oklch(72.4610227272% 0.1139543887 270deg);
+  --tone-blue-57: oklch(73.1770537252% 0.1109915018 270deg);
+  --tone-blue-58: oklch(73.8875229981% 0.108051629 270deg);
+  --tone-blue-59: oklch(74.5925685407% 0.1051341991 270deg);
+  --tone-blue-60: oklch(75.2923226512% 0.1022386649 270deg);
+  --tone-blue-61: oklch(75.9869122571% 0.099364501 270deg);
+  --tone-blue-62: oklch(76.6764592173% 0.0965112032 270deg);
+  --tone-blue-63: oklch(77.361080603% 0.0936782872 270deg);
+  --tone-blue-64: oklch(78.0408889583% 0.0908652871 270deg);
+  --tone-blue-65: oklch(78.7159925432% 0.088071755 270deg);
+  --tone-blue-66: oklch(79.3864955597% 0.0852972598 270deg);
+  --tone-blue-67: oklch(80.0524983632% 0.0825413861 270deg);
+  --tone-blue-68: oklch(80.7140976593% 0.0798037338 270deg);
+  --tone-blue-69: oklch(81.3713866883% 0.0770839172 270deg);
+  --tone-blue-70: oklch(82.0244553975% 0.0743815639 270deg);
+  --tone-blue-71: oklch(82.673390603% 0.0716963147 270deg);
+  --tone-blue-72: oklch(83.3182761409% 0.0690278229 270deg);
+  --tone-blue-73: oklch(83.9591930095% 0.0663757531 270deg);
+  --tone-blue-74: oklch(84.5962195028% 0.0637397814 270deg);
+  --tone-blue-75: oklch(85.2294313362% 0.0611195945 270deg);
+  --tone-blue-76: oklch(85.8589017643% 0.0585148893 270deg);
+  --tone-blue-77: oklch(86.4847016922% 0.0559253723 270deg);
+  --tone-blue-78: oklch(87.1068997805% 0.0533507595 270deg);
+  --tone-blue-79: oklch(87.7255625439% 0.0507907757 270deg);
+  --tone-blue-80: oklch(88.3407544446% 0.048245154 270deg);
+  --tone-blue-81: oklch(88.9525379804% 0.0457136359 270deg);
+  --tone-blue-82: oklch(89.5609737683% 0.0431959706 270deg);
+  --tone-blue-83: oklch(90.1661206227% 0.0406919147 270deg);
+  --tone-blue-84: oklch(90.7680356306% 0.0382012319 270deg);
+  --tone-blue-85: oklch(91.3667742219% 0.0357236929 270deg);
+  --tone-blue-86: oklch(91.9623902366% 0.0332590749 270deg);
+  --tone-blue-87: oklch(92.5549359882% 0.0308071614 270deg);
+  --tone-blue-88: oklch(93.1444623238% 0.0283677421 270deg);
+  --tone-blue-89: oklch(93.7310186818% 0.0259406124 270deg);
+  --tone-blue-90: oklch(94.314653146% 0.0235255732 270deg);
+  --tone-blue-91: oklch(94.8954124972% 0.021122431 270deg);
+  --tone-blue-92: oklch(95.4733422628% 0.0187309975 270deg);
+  --tone-blue-93: oklch(96.0484867632% 0.0163510893 270deg);
+  --tone-blue-94: oklch(96.6208891568% 0.0139825276 270deg);
+  --tone-blue-95: oklch(97.190591482% 0.0116251387 270deg);
+  --tone-blue-96: oklch(97.7576346981% 0.009278753 270deg);
+  --tone-blue-97: oklch(98.3220587238% 0.0069432053 270deg);
+  --tone-blue-98: oklch(98.8839024742% 0.0046183346 270deg);
+  --tone-blue-99: oklch(99.4432038957% 0.0023039839 270deg);
+  --tone-blue-100: oklch(100% 0 270deg);
+  --tone-neutral-0: oklch(0% 0 0deg);
+  --tone-neutral-1: oklch(7.7426368268% 0 0deg);
+  --tone-neutral-2: oklch(11.3796204055% 0 0deg);
+  --tone-neutral-3: oklch(14.2546399644% 0 0deg);
+  --tone-neutral-4: oklch(16.725020619% 0 0deg);
+  --tone-neutral-5: oklch(18.9323950471% 0 0deg);
+  --tone-neutral-6: oklch(20.9505360307% 0 0deg);
+  --tone-neutral-7: oklch(22.8237919577% 0 0deg);
+  --tone-neutral-8: oklch(24.5813396878% 0 0deg);
+  --tone-neutral-9: oklch(26.2436124877% 0 0deg);
+  --tone-neutral-10: oklch(27.8255940221% 0 0deg);
+  --tone-neutral-11: oklch(29.3386671907% 0 0deg);
+  --tone-neutral-12: oklch(30.791725436% 0 0deg);
+  --tone-neutral-13: oklch(32.191877531% 0 0deg);
+  --tone-neutral-14: oklch(33.5449142848% 0 0deg);
+  --tone-neutral-15: oklch(34.8556287861% 0 0deg);
+  --tone-neutral-16: oklch(36.1280428055% 0 0deg);
+  --tone-neutral-17: oklch(37.3655709739% 0 0deg);
+  --tone-neutral-18: oklch(38.5711424751% 0 0deg);
+  --tone-neutral-19: oklch(39.7472929842% 0 0deg);
+  --tone-neutral-20: oklch(40.8962353023% 0 0deg);
+  --tone-neutral-21: oklch(42.0199144372% 0 0deg);
+  --tone-neutral-22: oklch(43.1200511276% 0 0deg);
+  --tone-neutral-23: oklch(44.1981766493% 0 0deg);
+  --tone-neutral-24: oklch(45.25566095% 0 0deg);
+  --tone-neutral-25: oklch(46.2937356144% 0 0deg);
+  --tone-neutral-26: oklch(47.3135127784% 0 0deg);
+  --tone-neutral-27: oklch(48.3160008336% 0 0deg);
+  --tone-neutral-28: oklch(49.3021175648% 0 0deg);
+  --tone-neutral-29: oklch(50.2727012168% 0 0deg);
+  --tone-neutral-30: oklch(51.2285198768% 0 0deg);
+  --tone-neutral-31: oklch(52.1702794758% 0 0deg);
+  --tone-neutral-32: oklch(53.0986306496% 0 0deg);
+  --tone-neutral-33: oklch(54.0141746533% 0 0deg);
+  --tone-neutral-34: oklch(54.9174684839% 0 0deg);
+  --tone-neutral-35: oklch(55.8090293373% 0 0deg);
+  --tone-neutral-36: oklch(56.6893385022% 0 0deg);
+  --tone-neutral-37: oklch(57.558844776% 0 0deg);
+  --tone-neutral-38: oklch(58.4179674734% 0 0deg);
+  --tone-neutral-39: oklch(59.2670990837% 0 0deg);
+  --tone-neutral-40: oklch(60.106607628% 0 0deg);
+  --tone-neutral-41: oklch(60.9368387549% 0 0deg);
+  --tone-neutral-42: oklch(61.7581176108% 0 0deg);
+  --tone-neutral-43: oklch(62.5707505131% 0 0deg);
+  --tone-neutral-44: oklch(63.3750264509% 0 0deg);
+  --tone-neutral-45: oklch(64.1712184355% 0 0deg);
+  --tone-neutral-46: oklch(64.9595847172% 0 0deg);
+  --tone-neutral-47: oklch(65.7403698863% 0 0deg);
+  --tone-neutral-48: oklch(66.5138058689% 0 0deg);
+  --tone-neutral-49: oklch(67.2801128326% 0 0deg);
+  --tone-neutral-50: oklch(68.0395000087% 0 0deg);
+  --tone-neutral-51: oklch(68.7921664432% 0 0deg);
+  --tone-neutral-52: oklch(69.5383016812% 0 0deg);
+  --tone-neutral-53: oklch(70.2780863941% 0 0deg);
+  --tone-neutral-54: oklch(71.011692954% 0 0deg);
+  --tone-neutral-55: oklch(71.7392859608% 0 0deg);
+  --tone-neutral-56: oklch(72.4610227272% 0 0deg);
+  --tone-neutral-57: oklch(73.1770537252% 0 0deg);
+  --tone-neutral-58: oklch(73.8875229981% 0 0deg);
+  --tone-neutral-59: oklch(74.5925685407% 0 0deg);
+  --tone-neutral-60: oklch(75.2923226512% 0 0deg);
+  --tone-neutral-61: oklch(75.9869122571% 0 0deg);
+  --tone-neutral-62: oklch(76.6764592173% 0 0deg);
+  --tone-neutral-63: oklch(77.361080603% 0 0deg);
+  --tone-neutral-64: oklch(78.0408889583% 0 0deg);
+  --tone-neutral-65: oklch(78.7159925432% 0 0deg);
+  --tone-neutral-66: oklch(79.3864955597% 0 0deg);
+  --tone-neutral-67: oklch(80.0524983632% 0 0deg);
+  --tone-neutral-68: oklch(80.7140976593% 0 0deg);
+  --tone-neutral-69: oklch(81.3713866883% 0 0deg);
+  --tone-neutral-70: oklch(82.0244553975% 0 0deg);
+  --tone-neutral-71: oklch(82.673390603% 0 0deg);
+  --tone-neutral-72: oklch(83.3182761409% 0 0deg);
+  --tone-neutral-73: oklch(83.9591930095% 0 0deg);
+  --tone-neutral-74: oklch(84.5962195028% 0 0deg);
+  --tone-neutral-75: oklch(85.2294313362% 0 0deg);
+  --tone-neutral-76: oklch(85.8589017643% 0 0deg);
+  --tone-neutral-77: oklch(86.4847016922% 0 0deg);
+  --tone-neutral-78: oklch(87.1068997805% 0 0deg);
+  --tone-neutral-79: oklch(87.7255625439% 0 0deg);
+  --tone-neutral-80: oklch(88.3407544446% 0 0deg);
+  --tone-neutral-81: oklch(88.9525379804% 0 0deg);
+  --tone-neutral-82: oklch(89.5609737683% 0 0deg);
+  --tone-neutral-83: oklch(90.1661206227% 0 0deg);
+  --tone-neutral-84: oklch(90.7680356306% 0 0deg);
+  --tone-neutral-85: oklch(91.3667742219% 0 0deg);
+  --tone-neutral-86: oklch(91.9623902366% 0 0deg);
+  --tone-neutral-87: oklch(92.5549359882% 0 0deg);
+  --tone-neutral-88: oklch(93.1444623238% 0 0deg);
+  --tone-neutral-89: oklch(93.7310186818% 0 0deg);
+  --tone-neutral-90: oklch(94.314653146% 0 0deg);
+  --tone-neutral-91: oklch(94.8954124972% 0 0deg);
+  --tone-neutral-92: oklch(95.4733422628% 0 0deg);
+  --tone-neutral-93: oklch(96.0484867632% 0 0deg);
+  --tone-neutral-94: oklch(96.6208891568% 0 0deg);
+  --tone-neutral-95: oklch(97.190591482% 0 0deg);
+  --tone-neutral-96: oklch(97.7576346981% 0 0deg);
+  --tone-neutral-97: oklch(98.3220587238% 0 0deg);
+  --tone-neutral-98: oklch(98.8839024742% 0 0deg);
+  --tone-neutral-99: oklch(99.4432038957% 0 0deg);
+  --tone-neutral-100: oklch(100% 0 0deg);
+  --surface: light-dark(var(--tone-neutral-98), var(--tone-neutral-4));
+  --on-surface: light-dark(var(--tone-neutral-4), var(--tone-neutral-98));
+  --on-surface-variant: light-dark(var(--tone-neutral-24), var(--tone-neutral-78));
+  --surface-1: light-dark(var(--tone-neutral-100), var(--tone-neutral-2));
+  --surface-2: light-dark(var(--tone-neutral-96), var(--tone-neutral-6));
+  --surface-3: light-dark(var(--tone-neutral-94), var(--tone-neutral-8));
+  --surface-4: light-dark(var(--tone-neutral-92), var(--tone-neutral-10));
+  --surface-5: light-dark(var(--tone-neutral-90), var(--tone-neutral-12));
+  --outline: light-dark(var(--tone-neutral-50), var(--tone-neutral-52));
+  --outline-variant: light-dark(var(--tone-neutral-80), var(--tone-neutral-22));
+  --primary: light-dark(var(--tone-red-40), var(--tone-red-62));
+  --on-primary: light-dark(var(--tone-red-100), var(--tone-red-2));
+  --primary-container: light-dark(var(--tone-red-90), var(--tone-red-12));
+  --on-primary-container: light-dark(var(--tone-red-30), var(--tone-red-72));
+  --secondary: light-dark(var(--tone-green-40), var(--tone-green-62));
+  --on-secondary: light-dark(var(--tone-green-100), var(--tone-green-2));
+  --secondary-container: light-dark(var(--tone-green-90), var(--tone-green-12));
+  --on-secondary-container: light-dark(var(--tone-green-30), var(--tone-green-72));
+  --tertiary: light-dark(var(--tone-blue-40), var(--tone-blue-62));
+  --on-tertiary: light-dark(var(--tone-blue-100), var(--tone-blue-2));
+  --tertiary-container: light-dark(var(--tone-blue-90), var(--tone-blue-12));
+  --on-tertiary-container: light-dark(var(--tone-blue-30), var(--tone-blue-72));
+}
+
+/* stylelint-disable-next-line scss/at-function-pattern */
+/* stylelint-disable-next-line scss/at-function-pattern */
+:root {
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --min-width: 20rem;
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --max-width: 90rem;
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --min-content-width: 18rem;
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --max-content-width: 80rem;
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --min-font-size: 1rem;
+  /* stylelint-disable-next-line scss/dollar-variable-no-missing-interpolation */
+  --max-font-size: 1.25rem;
+}
+
+:root {
+  --step--2: clamp(0.6944rem, 0.6643rem + 0.1508vw, 0.8rem);
+  --step--1: clamp(0.8333rem, 0.7857rem + 0.2381vw, 1rem);
+  --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0964rem + 0.5179vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2934rem + 0.733vw, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.5242rem + 1.0192vw, 2.4414rem);
+  --step-4: clamp(2.0736rem, 1.7941rem + 1.3974vw, 3.0518rem);
+  --step-5: clamp(2.4883rem, 2.1094rem + 1.8948vw, 3.8147rem);
+  --leading-2xs: 1;
+  --leading-xs: 1.2;
+  --leading-s: 1.4;
+  --leading-m: 1.6;
+  --leading-l: 1.8;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+:root {
+  --space-3xs: clamp(0.25rem, 0.2321rem + 0.0893vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.4643rem + 0.1786vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3929rem + 0.5357vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8571rem + 0.7143vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.7857rem + 1.0714vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.7143rem + 1.4286vw, 5rem);
+  --space-3xl: clamp(6rem, 5.5714rem + 2.1429vw, 7.5rem);
+  --space-3xs-2xs: clamp(0.25rem, 0.1429rem + 0.5357vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5rem, 0.375rem + 0.625vw, 0.9375rem);
+  --space-xs-s: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.75rem + 1.25vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.5rem + 2.5vw, 3.75rem);
+  --space-xl-2xl: clamp(3rem, 2.4286rem + 2.8571vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 3rem + 5vw, 7.5rem);
+  --space-s-3xl: clamp(1rem, -0.8571rem + 9.2857vw, 7.5rem);
+  --space-s-2xl: clamp(1rem, -0.1429rem + 5.7143vw, 5rem);
+  --space-s-xl: clamp(1rem, 0.2143rem + 3.9286vw, 3.75rem);
+  --space-s-l: clamp(1rem, 0.5714rem + 2.1429vw, 2.5rem);
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  font-size: var(--step-0);
+  font-size-adjust: from-font;
+  line-height: var(--leading-m);
+  color: var(--on-surface);
+  background: var(--surface-1);
+}
+
+:is(h1, h2, h3, h4) {
+  line-height: var(--leading-xs);
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 20ch;
+  font-size: var(--step-5);
+}
+
+h2 {
+  max-width: 35ch;
+  font-size: var(--step-4);
+}
+
+h3 {
+  max-width: 35ch;
+  font-size: var(--step-3);
+}
+
+:is(h4, h5, h6) {
+  font-size: var(--step-2);
+}
+
+small {
+  font-size: var(--step--1);
+}
+
+ins {
+  padding-inline: 0.3em;
+  color: var(--surface-1);
+  text-decoration: none;
+  background: var(--primary);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-m, 1.875rem));
+  align-items: var(--cluster-vertical-alignment, center);
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: [full-width-start] minmax(0, 1fr) [breakout-start] minmax(0, var(--gutter, 0)) [content-start] min(100% - 2 * var(--gutter, 0rem), var(--wrapper-max-width, var(--max-width, 90rem)) - 2 * var(--gutter, 0rem)) [content-end] minmax(0, var(--gutter, 0)) [breakout-end] minmax(0, 1fr) [full-width-end];
+}
+.grid-wrapper > * {
+  grid-column: content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(min(100%, var(--grid-min-item-size, 16rem)), 1fr));
+  gap: var(--gutter, var(--space-s-l, 2.5rem));
+}
+.grid[data-equal-row] {
+  grid-auto-rows: 1fr;
+}
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-m, 1.875rem));
+  align-items: var(--repel-vertical-alignment, center);
+  justify-content: space-between;
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}
+
+.sidebar[data-direction=rtl] > :last-child, .sidebar:not([data-direction]) > :first-child {
+  flex-grow: 1;
+  flex-basis: var(--sidebar-fixed-width, var(--min-width, 20rem));
+}
+
+.sidebar[data-direction=rtl] > :first-child, .sidebar:not([data-direction]) > :last-child {
+  flex-grow: 999;
+  flex-basis: 0;
+  min-inline-size: min(100%, var(--sidebar-flexible-min-width, calc(50% - 0.5 * var(--gutter, var(--space-s-l, 2.5rem)))));
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l, 2.5rem));
+}
+.sidebar[data-reversed] {
+  flex-direction: row-reverse;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l, 2.5rem));
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 100%) * 999999);
+  max-inline-size: 100%;
+}
+
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  max-inline-size: min(100%, var(--wrapper-max-width, var(--max-width, 90rem)));
+  padding-inline: var(--gutter, 0);
+  margin-inline: auto;
+}
+
+.region {
+  position: relative;
+  padding-block: var(--region-space, var(--space-xl-2xl, 5rem));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: rect(0 0 0 0);
+}
+
+.hero {
+  position: relative;
+  height: 676px; /* 스샷 비율 느낌 */
+  min-height: 520px;
+  max-height: 76vh; /* 너무 커지지 않게 */
+  overflow: hidden;
+  background: #111;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70% 20%;
+     object-position: 70% 20%;
+}
+
+.hero__inner {
+  position: relative; /* overlay 위로 올라오게 */
+  display: flex;
+  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
+  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  /* 아래쪽 텍스트 가독성용 어두운 그라데이션 */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.38) 35%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero__content {
+  position: absolute;
+  bottom: clamp(20px, 5vw, 56px);
+  z-index: 2;
+  max-width: 720px;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.hero__title {
+  margin: 0 0 14px;
+  font-size: clamp(40px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero__desc {
+  margin: 0;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* 모바일에서 높이/여백 조금 압축 */
+@media (width <= 640px) {
+  .hero {
+    min-height: 460px;
+  }
+  .hero__content {
+    max-width: 92vw;
+  }
+}
+.research-block1 {
+  max-width: 1280px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.research-block__title {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.research-block__rule {
+  height: 2px;
+  margin-bottom: 32px;
+  background: #e8e8e8;
+}
+
+.research-block__grid {
+  display: grid;
+  /* 왼쪽 이미지 + 오른쪽 2컬럼 텍스트 */
+  grid-template-columns: 480px 1fr 1fr;
+  gap: 24px 58px;
+  /* 스샷 느낌: 이미지↔텍스트 사이 넓게, 텍스트↔텍스트는 조금 좁게 */
+  align-items: start;
+}
+
+.research-block__figure {
+  width: 100%;
+  height: 240px; /* 스샷에 480x240 느낌 */
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ✅ “피그마처럼 안 잘리게” = contain 추천 (도식/라인아트는 이게 정답) */
+.research-block__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left center;
+     object-position: left center;
+}
+
+/* 텍스트 */
+.research-block__col {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111;
+}
+
+.research-block__col p {
+  margin: 0 0 16px;
+}
+
+/* 반응형: 좁아지면 1열로 쌓기 */
+@media (width <= 1024px) {
+  .research-block__grid {
+    grid-template-columns: 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .research-block__figure {
+    height: 280px;
+  }
+}
+.figure-split1 {
+  padding: 0 24px 120px;
+  background: #fff;
+}
+
+.figure-split__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  /* 피그마에서 1280 x 740 느낌 */
+  align-items: stretch;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.figure-split__panel {
+  display: flex;
+  height: 740px; /* 피그마 Hug 740에 맞춤 */
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+}
+
+.figure-split__panel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* ✅ 도표/캡처는 cover 쓰면 무조건 잘림 → contain이 정답 */
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* 왼쪽 그래프는 왼쪽 정렬이 더 자연스러움 */
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* 반응형: 좁아지면 1열로 */
+@media (width <= 1024px) {
+  .figure-split__inner {
+    grid-template-columns: 1fr;
+  }
+  .figure-split__panel {
+    height: 520px;
+  }
+}
+.meaning1 {
+  display: grid;
+  /* 제목 고정폭 + 본문 가변 */
+  grid-template-columns: 254px 1fr;
+  /* 피그마에서 찍힌 값 */
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  align-items: start;
+  max-width: 1280px;
+  padding: 0 0 120px;
+  margin: 0 auto;
+}
+
+.meaning__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.meaning__content {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111;
+}
+
+.meaning__content p {
+  margin: 0 0 18px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.side-nav__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  pointer-events: auto;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.side-nav__btn--prev {
+  left: 24px;
+}
+
+.side-nav__btn--next {
+  right: 24px;
+}
+
+.side-nav__btn:hover {
+  transform: scale(1.03);
+}
+
+body {
+  color: #fff;
+}
+
+.fmri {
+  background: #fff;
+}
+
+.fmri-hero {
+  position: relative;
+  height: 440px; /* 캡처: 1440 x 440 */
+  overflow: hidden;
+  background: #000;
+}
+
+.fmri-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* ✅ 중요: 그래프/뇌 이미지가 오른쪽에 많아서 살짝 오른쪽 기준 */
+  -o-object-position: 60% center;
+     object-position: 60% center;
+  transform: scale(1.01);
+}
+
+.fmri-hero__overlay {
+  position: absolute;
+  inset: 0;
+  /* 좌하단 텍스트 가독성용 */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0.12) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.fmri-hero__content {
+  position: absolute;
+  bottom: 48px;
+  z-index: 2;
+  max-width: 720px;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+}
+
+.fmri-hero__title {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.fmri-hero__desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 모바일 */
+@media (width <= 640px) {
+  .fmri-hero {
+    height: 360px;
+  }
+  .fmri-hero__bg {
+    -o-object-position: 65% center;
+       object-position: 65% center;
+  }
+}
+.fmri-block {
+  padding: 120px 0 0; /* 위아래만 */
+  background: #fff;
+}
+
+.fmri-block__inner {
+  width: 1280px; /* max-width 말고 width로 고정 */
+  padding: 0; /* 좌우 패딩 제거 */
+  margin: 0 auto;
+}
+
+.fmri-block__title {
+  display: flex;
+  align-items: flex-end; /* 글자가 아래쪽에 붙는 느낌 */
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+.fmri-block__rule {
+  height: 2px;
+  margin: 20px 0 36px; /* 스샷: 아래 간격 36 */
+  background: #e8e8e8;
+}
+
+.fmri-block__grid {
+  display: grid;
+  grid-template-columns: 480px 1fr; /* 왼쪽 480 */
+  -moz-column-gap: 55px;
+       column-gap: 55px; /* 스샷: 55 */
+  align-items: start;
+}
+
+.fmri-block__figure {
+  width: 480px;
+  height: 360px; /* 스샷: 480 x 360 */
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.fmri-block__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* 라인아트 꽉 차게 */
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* 오른쪽: 2컬럼 텍스트 */
+.fmri-block__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 25px;
+       column-gap: 25px; /* 스샷: 25 */
+  align-items: start;
+}
+
+.fmri-block__col {
+  font-size: 18px; /* 스샷 느낌(큰 본문) */
+  line-height: 1.85;
+  color: #111;
+}
+
+.fmri-block__col p {
+  margin: 0 0 18px;
+}
+
+/* 반응형 */
+@media (width <= 1100px) {
+  .fmri-block__grid {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .fmri-block__figure {
+    width: 100%;
+    height: 360px;
+  }
+  .fmri-block__cols {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+}
+@media (width <= 640px) {
+  .fmri-block__title {
+    height: auto;
+    font-size: 40px;
+  }
+  .fmri-block__col {
+    font-size: 16px;
+  }
+}
+.fmri-images {
+  margin-top: 120px;
+  background: #fff;
+}
+
+.fmri-images__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.fmri-images__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.fmri__inner {
+  position: relative; /* overlay 위로 올라오게 */
+  display: flex;
+  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
+  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  height: 100%;
+  margin: 0 auto;
+}
+
+.fmri-images__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 740px;
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.fmri-images__figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 반응형: 좁아지면 1열로 */
+@media (width <= 960px) {
+  .fmri-images__grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .fmri-images__figure {
+    height: auto;
+    padding: 16px;
+  }
+  .fmri-images__figure img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+.frame1440 {
+  box-sizing: border-box;
+  width: min(1440px, 100%);
+  padding: 0 80px; /* 피그마 안쪽 80 */
+  margin: 0 auto;
+}
+
+.content1280 {
+  max-width: 1280px; /* 내부 콘텐츠 폭 */
+}
+
+/* ===== meaning block ===== */
+.meaning-block {
+  background: #fff;
+}
+
+.meaning-block__grid {
+  display: grid;
+  /* ✅ 피그마 느낌: 왼쪽(제목) + 120px 간격 + 오른쪽(본문) */
+  grid-template-columns: 254px minmax(0, 634px);
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  align-items: start;
+  padding: 120px 0 180px; /* 위아래 여백은 필요에 따라 조절 */
+}
+
+/* 제목 */
+.meaning-block__title {
+  margin: 0;
+  font-size: 32px; /* 원하면 40으로 올려도 됨 */
+  font-weight: 800;
+  line-height: 1.35;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+/* 본문: 찢어짐 방지 포함 */
+.meaning-block__text {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+  /* ✅ “한 글자씩 세로로 찢어짐” 방지 */
+  writing-mode: horizontal-tb;
+}
+
+/* 아래 회색 바닥(너가 올린 스샷 느낌) */
+.meaning-block__footer {
+  height: 240px;
+  background: #eaeaea;
+}
+
+/* ===== 반응형: 화면이 좁아지면 1컬럼으로 ===== */
+@media (width <= 900px) {
+  .frame1440 {
+    padding: 0 24px;
+  }
+  .meaning-block__grid {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+}
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.side-nav__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  pointer-events: auto;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.side-nav__btn--prev {
+  left: 24px;
+}
+
+.side-nav__btn--next {
+  right: 24px;
+}
+
+.side-nav__btn:hover {
+  transform: scale(1.03);
+}
+
+body {
+  color: #fff;
+}
+
+root {
+  color-scheme: light;
+}
+
+.hero-babyschema {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* 스샷 기준 */
+  height: 480px; /* 스샷 기준 */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0; /* 필요하면 조절 */
+}
+
+/* 배경 이미지: 섹션을 꽉 채우게 */
+.hero-babyschema__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
+  -o-object-position: center;
+     object-position: center; /* 중앙 기준 */
+  transform: translateZ(0); /* 살짝 렌더링 안정 */
+}
+
+/* 아래쪽 어둡게 (텍스트 가독성) */
+.hero-babyschema__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0) 70%);
+}
+
+.hero__inner1 {
+  position: relative; /* overlay 위로 올라오게 */
+  display: flex;
+  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
+  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* 텍스트 레이어 */
+.hero-babyschema__content {
+  position: absolute;
+  bottom: 48px;
+  left: 64px;
+  z-index: 1;
+  max-width: 760px;
+  color: #fff;
+}
+
+.hero-babyschema__content1 {
+  position: absolute;
+  bottom: 48px;
+  z-index: 1;
+  max-width: 760px;
+  color: #fff;
+}
+
+.hero-babyschema__content1 h1 {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.hero-babyschema__content1 p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+  opacity: 0.95;
+}
+
+/* 반응형: 모바일에서 패딩/폰트 줄이기 */
+@media (width <= 768px) {
+  .hero-babyschema {
+    height: 420px;
+  }
+  .hero-babyschema__content {
+    right: 20px;
+    bottom: 28px;
+    left: 20px;
+    max-width: none;
+  }
+  .hero-babyschema__content h1 {
+    font-size: 32px;
+  }
+}
+.baby-schema-section {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* 위 섹션과 120px */
+}
+
+.baby-schema-title1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* ✅ 피그마 의도: 타이틀 아래 가로 divider */
+.baby-schema-divider1 {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 32px; /* 타이틀-선 간격 / 선-콘텐츠 간격 */
+  background: #cfcfcf; /* 스샷처럼 연회색 */
+}
+
+.baby-schema-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.baby-schema-image {
+  flex-shrink: 0;
+  width: 480px; /* 피그마: 480 */
+  height: 320px; /* 피그마: 320 */
+  margin-right: 56px; /* 피그마: 56 */
+}
+
+.baby-schema-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.baby-schema-text {
+  display: grid;
+  grid-template-columns: 360px 360px; /* 피그마: 360 + 360 */
+  gap: 24px; /* 피그마: 24 */
+  padding-top: 8px; /* 스샷처럼 텍스트가 살짝 내려앉게 */
+}
+
+.baby-schema-text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-section {
+    padding: 0 20px;
+  }
+  .baby-schema-text {
+    grid-template-columns: 1fr 1fr; /* 좁아지면 유동 */
+  }
+}
+@media (width <= 900px) {
+  .baby-schema-content {
+    flex-direction: column;
+  }
+  .baby-schema-image {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+  .baby-schema-image img {
+    height: auto;
+  }
+  .baby-schema-text {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 0;
+  }
+}
+/* 전체 섹션 */
+.baby-schema-analysis {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* ⬅️ 위 콘텐츠와 120px */
+}
+
+/* 내부 레이아웃 */
+.baby-schema-analysis-inner {
+  display: flex;
+  gap: 32px; /* 피그마: 32 */
+  align-items: stretch;
+}
+
+/* 왼쪽: 6컷 이미지 */
+.analysis-image-left {
+  flex-shrink: 0;
+  width: 624px; /* 피그마 기준 */
+  height: 740px;
+  background: #fff;
+  border: 1px solid #d0d0d0; /* 피그마 테두리 */
+}
+
+.analysis-image-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 오른쪽: 얼굴 비율 강조 이미지 */
+.analysis-image-right {
+  flex: 1;
+  height: 740px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+}
+
+.analysis-image-right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-analysis {
+    padding: 0 20px;
+  }
+}
+@media (width <= 900px) {
+  .baby-schema-analysis-inner {
+    flex-direction: column;
+  }
+  .analysis-image-left,
+  .analysis-image-right {
+    width: 100%;
+    height: auto;
+  }
+  .analysis-image-left img,
+  .analysis-image-right img {
+    height: auto;
+  }
+}
+.baby-schema-meaning {
+  max-width: 1280px;
+  padding: 0;
+  margin: 120px auto 0; /* ⬅ 위 콘텐츠와 120px */
+}
+
+/* 내부 정렬 */
+.baby-schema-meaning-inner {
+  display: flex;
+  align-items: flex-start;
+  width: 1008px; /* 피그마 기준 */
+}
+
+/* 제목 */
+.baby-schema-meaning-title {
+  flex-shrink: 0;
+  width: 254px; /* Hug 느낌 고정 */
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* 본문 */
+.baby-schema-meaning-text {
+  width: 634px;
+  margin-top: 4px; /* 베이스라인 살짝 맞춤 */
+  margin-left: 120px; /* 피그마: 제목과 본문 간격 */
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
+}
+
+/* 반응형 */
+@media (width <= 1280px) {
+  .baby-schema-meaning {
+    padding: 0 20px;
+  }
+  .baby-schema-meaning-inner {
+    width: 100%;
+  }
+}
+@media (width <= 900px) {
+  .baby-schema-meaning-inner {
+    flex-direction: column;
+  }
+  .baby-schema-meaning-text {
+    width: 100%;
+    margin-top: 18px;
+    margin-left: 0;
+  }
+}
+/* 텍스트블록 -> 이미지 간격 120px */
+.kawaii-image-wrap {
+  margin-top: 120px;
+}
+
+/* 1440x580 */
+.kawaii-image {
+  display: block;
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.side-nav__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  pointer-events: auto;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.side-nav__btn--prev {
+  left: 24px;
+}
+
+.side-nav__btn--next {
+  right: 24px;
+}
+
+.side-nav__btn:hover {
+  transform: scale(1.03);
+}
+
+/* 페이지 배경 */
+body {
+  color: #000;
+  background-color: #0b0b0b;
+}
+
+.page--dark {
+  min-height: 100vh;
+  color: #fff;
+  background-color: #0b0b0b;
+}
+
+/* 1440 프레임 */
+.frame-1440 {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* ✅ 피그마 마진 80 => 내부 컨텐츠 1280 */
+.content-1280 {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 섹션 여백 */
+.black-schema-section {
+  padding: 80px 0 0;
+}
+
+/* ✅ 여기서 좌우 padding 제거! (1280 안에 이미 들어왔으니까) */
+.baby-schema-layout {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* 타이틀/본문은 그대로 */
+.baby-schema-title {
+  flex: 0 0 243px;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 36px; /* 선 ↔ 본문 간격 */
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.baby-schema-body {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 반응형: 화면이 작아지면 1440/1280 둘 다 fluid */
+@media (width <= 1440px) {
+  .frame-1440 {
+    width: 100%;
+  }
+  .content-1280 {
+    width: calc(100% - 160px); /* 좌우 80 유지 */
+  }
+}
+@media (width <= 900px) {
+  .content-1280 {
+    width: calc(100% - 80px); /* 모바일에서 좀 줄임 */
+  }
+  .baby-schema-layout {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .baby-schema-title {
+    flex: none;
+  }
+}
+.baby-schema-detail-section {
+  padding-top: 120px;
+}
+
+/* ✅ 2컬럼 전체(400+30+400=830)를 우측 정렬 */
+.detail-wrap {
+  width: 830px;
+  margin-left: auto; /* 핵심: 1280 안에서 오른쪽으로 붙음 */
+}
+
+/* ✅ 컬럼 폭 고정: 캡쳐의 400px Hug 느낌 */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.detail-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* 캡쳐처럼 타이틀 아래 길게 선 (각 컬럼 400에 맞춤) */
+.detail-divider {
+  width: 400px;
+  height: 1px;
+  margin: 32px 0;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.detail-body {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 반응형 */
+@media (width <= 1440px) {
+  .detail-wrap {
+    width: 830px;
+  }
+}
+@media (width <= 980px) {
+  .detail-wrap {
+    width: 100%;
+    margin-left: 0;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr;
+    row-gap: 64px;
+  }
+  .detail-divider {
+    width: 100%;
+  }
+}
+/* 아래쪽 반복 섹션 (초유인자극 / 카와이자극) */
+.research-row-section1 {
+  padding-top: 120px; /* 섹션 사이 간격 - 필요하면 조절 */
+}
+
+.research-row-section2 {
+  padding-top: 120px; /* 섹션 사이 간격 - 필요하면 조절 */
+}
+
+/* 좌 타이틀 + 우 본문 구조 */
+.research-row {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* 왼쪽 큰 타이틀 (맨위 베이비스키마와 동일하게) */
+.research-row-title {
+  flex: 0 0 243px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+/* 오른쪽 본문 영역 */
+.research-row-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-row-body p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 반응형 */
+@media (width <= 900px) {
+  .research-row {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .research-row-title {
+    flex: none;
+  }
+}
+/* 위 섹션과 간격 120px */
+.baby-schema-image-strip {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* 1280x328 안에 420x328 3개 + gap 10px 2개 */
+.img-strip {
+  display: flex;
+  gap: 10px;
+  width: 1280px;
+  height: 328px;
+}
+
+/* 프레임(패널) 고정 사이즈 */
+.panel {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 328px;
+  background: #000; /* 프레임 바깥 느낌 */
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.panel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* ← 이게 핵심 */
+}
+
+.panel-inner img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 이미지가 프레임 꽉 차게 */
+.panel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; /* 캡쳐처럼 꽉 채우기 */
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* 반응형(선택) */
+@media (width <= 1440px) {
+  .img-strip {
+    width: 100%;
+  }
+  .panel {
+    width: calc((100% - 20px) / 3); /* gap 10*2 */
+  }
+}
+.panel {
+  box-sizing: border-box;
+  width: 420px;
+  height: 328px;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  /* ✅ 추가 */
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+:root {
+  --left-col: 360px; /* ✅ 여기 값만 피그마에 맞게 조절하면 전체가 딱 맞음 */
+  --col-gap: 56px; /* 위에서 쓰던 gap */
+}
+
+.kawaii-section {
+  background: #0b0b0f;
+}
+
+/* 1440 캔버스 + 좌우 80 = 내용폭 1280 */
+.kawaii-inner {
+  max-width: 1440px;
+  padding: 80px 80px 0; /* 네비 아래 80px이면: 섹션 시작이 네비 바로 아래라는 가정 */
+  margin: 0 auto;
+}
+
+/* 선 */
+.kawaii-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* 선 아래 36px */
+.kawaii-row {
+  display: grid;
+  grid-template-columns: var(--left-col) 1fr;
+  -moz-column-gap: var(--col-gap);
+       column-gap: var(--col-gap);
+  align-items: start;
+  margin-top: 36px;
+}
+
+/* 왼쪽 타이틀 */
+.kawaii-title1 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* 오른쪽 본문 */
+.kawaii-body {
+  max-width: 760px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+  /* margin-left:auto 제거 */
+}
+
+/* 반응형 */
+@media (width <= 980px) {
+  .kawaii-inner {
+    padding: 80px 24px 0;
+  }
+  .kawaii-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .kawaii-title {
+    font-size: 40px;
+    white-space: normal;
+  }
+  .kawaii-body {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+/* 위 섹션과 120px 간격 */
+.kawaii-detail {
+  margin-top: 120px;
+}
+
+.kawaii-inner1 {
+  max-width: 1440px;
+  padding: 0 80px; /* 1440에서 좌우 80 => 1280 */
+  margin: 0 auto;
+}
+
+/* 좌(이미지) + 우(텍스트) */
+.kawaii-detail-row {
+  display: flex;
+  gap: 80px; /* 이미지-텍스트 간격 80 */
+  align-items: flex-start;
+}
+
+/* 이미지 620x440 */
+.kawaii-detail-media {
+  width: 620px;
+  height: 440px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.kawaii-detail-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 텍스트 박스 400 */
+.kawaii-detail-text {
+  width: 400px;
+}
+
+/* 타이틀 */
+.kawaii-detail-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* 타이틀 아래 라인 (이미지상으로 타이틀-라인 간격이 살짝 있음) */
+.kawaii-detail-rule {
+  height: 1px;
+  margin-top: 16px; /* 타이틀 아래 여백 */
+  margin-bottom: 32px;
+  background: rgba(255, 255, 255, 0.55);
+  /* 라인 아래(본문까지) 여백 */
+}
+
+/* 본문 */
+.kawaii-detail-body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 반응형 */
+@media (width <= 980px) {
+  .kawaii-inner {
+    padding: 0 24px;
+  }
+  .kawaii-detail-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .kawaii-detail-media {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 620/440;
+  }
+  .kawaii-detail-text {
+    width: 100%;
+  }
+}
+/* 섹션 간격 120px */
+.text-blocks {
+  margin-top: 120px;
+}
+
+/* 1440 캔버스 */
+.text-blocks-inner {
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+/* 개별 블록 */
+.text-block {
+  display: grid;
+  grid-template-columns: var(--left-col) 1fr;
+  -moz-column-gap: var(--col-gap);
+       column-gap: var(--col-gap);
+  align-items: start;
+}
+
+/* 블록 사이 간격 */
+.text-block + .text-block {
+  margin-top: 120px;
+}
+
+/* 왼쪽 타이틀 */
+.text-block-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+
+/* 오른쪽 본문 */
+.text-block-body {
+  max-width: 760px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 반응형 */
+@media (width <= 980px) {
+  .text-blocks-inner {
+    padding: 0 24px;
+  }
+  .text-block {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .text-block-title {
+    width: auto;
+  }
+  .text-block-body {
+    max-width: 100%;
+  }
+}
+/* 섹션 간격 120px */
+.section {
+  margin-top: 120px;
+}
+
+/* 1440 캔버스 래퍼 */
+.frame-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 1440 * 580 고정 */
+.image-1440 {
+  display: block;
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 텍스트블록 -> 이미지 간격 120px */
+.kawaii-image-wrap {
+  margin-top: 120px;
+}
+
+/* 1440x580 */
+.kawaii-image {
+  display: block;
+  width: 100% !important;
+  height: 580px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  height: 580px;
+}
+
+.kawaii-image-wrap {
+  height: 580px;
+  margin-top: 120px;
+  margin-right: -80px;
+  margin-left: -80px;
+}
+
+.image-hero {
+  display: block;
+  width: 1440px;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-section {
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.why-hero {
+  padding-top: 120px;
+}
+
+.why-container {
+  max-width: 1280px; /* 1440 - 80*2 */
+  margin: 0 auto;
+}
+
+.why-text {
+  max-width: 722px; /* Figma Hug */
+}
+
+.why-title {
+  margin: 0 0 20px; /* 제목-본문 간격 */
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.why-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 리스트 전체: 위아래 구분선 */
+.why-list {
+  padding-bottom: 200px;
+  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+}
+
+/* 아이템 하나 */
+.why-item1 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+.why-item2 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+/* 텍스트 */
+.why-item__title {
+  margin: 0 0 20px; /* 제목-본문 20 */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.why-item__desc {
+  max-width: 680px; /* Hug 680 */
+  margin: 0 0 64px; /* 본문-버튼 64 */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #8c8c8c;
+}
+
+/* 버튼(116 x 41 Hug) */
+.why-item__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 41px;
+  font-size: 18px;
+  color: #8c8c8c;
+  text-decoration: none;
+  border: 1px solid #bfbfbf;
+  border-radius: 999px;
+}
+
+/* 이미지 영역(522 x 380) */
+.why-item__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 522px;
+  height: 380px;
+}
+
+.why-item__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 상단 가로 라인 + 버튼 영역 */
+.why-list-top {
+  position: relative;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* 버튼 묶음 */
+.why-list-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  transform: translateY(-50%);
+}
+
+/* 버튼 하나 */
+.why-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 36px;
+  color: #000;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.why-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 혹시 튀어나오면 강제 */
+.why-item {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.why-hero {
+  padding-top: 7.5rem;
+}
+
+.why-container {
+  max-width: 80rem; /* 1440 - 80*2 */
+  margin: 0 auto;
+}
+
+.why-text {
+  max-width: 45.125rem; /* Figma Hug */
+}
+
+.why-title {
+  margin: 0 0 1.25rem; /* 제목-본문 간격 */
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.why-desc {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.why-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* 리스트 전체: 위아래 구분선 */
+.why-list {
+  padding-bottom: 12.5rem;
+  margin-top: 7.5rem; /* (캡처에서 32 보이던 간격 느낌) */
+}
+
+/* 아이템 하나 */
+.why-item1 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+.why-item2 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+/* 텍스트 */
+.why-item__title {
+  margin: 0 0 1.25rem; /* 제목-본문 20 */
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.why-item__desc {
+  max-width: 42.5rem; /* Hug 680 */
+  margin: 0 0 4rem; /* 본문-버튼 64 */
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #8c8c8c;
+}
+
+/* 버튼(116 x 41 Hug) */
+.why-item__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.25rem;
+  height: 2.5625rem;
+  font-size: 1.125rem;
+  color: #8c8c8c;
+  text-decoration: none;
+  border: 0.0625rem solid #bfbfbf;
+  border-radius: 62.4375rem;
+}
+
+/* 이미지 영역(522 x 380) */
+.why-item__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32.625rem;
+  height: 23.75rem;
+}
+
+.why-item__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 상단 가로 라인 + 버튼 영역 */
+.why-list-top {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+/* 버튼 묶음 */
+.why-list-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  gap: 1.25rem;
+  transform: translateY(-50%);
+}
+
+/* 버튼 하나 */
+.why-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.25rem;
+  color: #000;
+  cursor: pointer;
+  background: transparent;
+  border: 0.0625rem solid #000;
+  border-radius: 50%;
+}
+
+.why-container {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+/* 혹시 튀어나오면 강제 */
+.why-item {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.why-hero {
+  padding-top: 120px;
+}
+
+.why-container {
+  max-width: 1280px; /* 1440 - 80*2 */
+  margin: 0 auto;
+}
+
+.why-text {
+  max-width: 722px; /* Figma Hug */
+}
+
+.why-title {
+  margin: 0 0 20px; /* 제목-본문 간격 */
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.why-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 리스트 전체: 위아래 구분선 */
+.why-list {
+  padding-bottom: 200px;
+  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+}
+
+/* 아이템 하나 */
+.why-item1 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+.why-item2 {
+  display: grid;
+  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  -moz-column-gap: 78px;
+       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  align-items: start;
+  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
+  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
+  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+}
+
+/* 텍스트 */
+.why-item__title {
+  margin: 0 0 20px; /* 제목-본문 20 */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.why-item__desc {
+  max-width: 680px; /* Hug 680 */
+  margin: 0 0 64px; /* 본문-버튼 64 */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #8c8c8c;
+}
+
+/* 버튼(116 x 41 Hug) */
+.why-item__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 41px;
+  font-size: 18px;
+  color: #8c8c8c;
+  text-decoration: none;
+  border: 1px solid #bfbfbf;
+  border-radius: 999px;
+}
+
+/* 이미지 영역(522 x 380) */
+.why-item__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 522px;
+  height: 380px;
+}
+
+.why-item__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* 상단 가로 라인 + 버튼 영역 */
+.why-list-top {
+  position: relative;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* 버튼 묶음 */
+.why-list-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  transform: translateY(-50%);
+}
+
+/* 버튼 하나 */
+.why-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.why-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 혹시 튀어나오면 강제 */
+.why-item {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  padding-top: 92px;
+  background-color: #fff;
+}
+
+root {
+  color-scheme: light;
+}
+
+html {
+  font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px; /* ✅ 1440 - 80*2 */
+  height: 92px; /* 피그마 헤더 높이(필요하면 72/92로 조절) */
+  padding: 0; /* ✅ 좌우 80은 이미 container로 해결하니까 padding 제거 */
+  margin: 0 auto; /* ✅ 가운데 정렬 */
+}
+
+.logo {
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 48px; /* 메뉴 간격(원하는 값으로) */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative; /* overlay와 글자를 겹치게 하려고 필요 */
+  height: 680px; /* 배너 높이 (피그마 보면서 조절) */
+  overflow: hidden;
+  /* 배경 이미지 넣기 */
+  background-image: url("../images/baby1.webp");
+  background-position: 60% 40%;
+  background-size: cover; /* 꽉 차게 */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px; /* 피그마 기준 */
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+.hero-title {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.hero-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ===== 히어로 아래 섹션 ===== */
+.intro {
+  padding-top: 120px; /* 너가 말한 “상단 120px 차이”  /* 아래도 비슷하게 주면 안정적 */
+  background: #fff;
+}
+
+/* 왼쪽+오른쪽 2단 배치 */
+.intro-inner {
+  display: flex;
+  gap: 100px; /* 피그마에서 여백 주로 80~120 쓰는데, 일단 100 */
+  align-items: center; /* 세로 중앙 느낌 */
+}
+
+/* 왼쪽 텍스트 프레임 (피그마 550) */
+.intro-text {
+  width: 550px;
+}
+
+/* 제목 */
+.intro-title {
+  margin: 0 0 20px; /* 제목-본문 간격 20 */
+  font-size: 32px; /* 피그마 크기에 맞춰 조절 */
+  line-height: 1.2;
+  color: #222;
+}
+
+/* 본문 */
+.intro-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* 본문 아래 버튼까지 100px */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 100px; /* 피그마에서 표시된 100 */
+  font-size: 18px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+}
+
+/* 오른쪽 이미지 영역: 남는 공간을 다 먹음 */
+.intro-media {
+  flex: 1;
+}
+
+.intro-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* 필요 없으면 삭제 */
+}
+
+/* ===== 연구자료 섹션 ===== */
+.research {
+  /* “위 섹션의 가장 밑 라인 기준 120px 간격” */
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #fff;
+  background: #fff;
+}
+
+/* 제목/설명 영역 */
+.research-head {
+  max-width: 633px; /* 스샷에서 텍스트 프레임이 633 Hug로 보임 */
+}
+
+.research-title {
+  margin: 0 0 20px; /* 제목-본문 간격 20 */
+  font-size: 32px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.research-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* 텍스트 아래 이미지줄까지 간격(스샷에 48 표시) */
+.research-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr 1fr; /* 왼쪽 420 고정 + 나머지 2개 유동 */
+  gap: 24px; /* 카드 사이 간격(피그마 보고 조절) */
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+/* 이미지 카드 공통 */
+.research-card {
+  overflow: hidden; /* 테두리 안에서 잘리게 */
+  background: #fff;
+  border: 1px solid #ddd; /* 피그마에 테두리 느낌 있으면 유지 */
+}
+
+/* 가운데 카드만 “왼쪽 여백 10px” 반영(스샷의 10) */
+.research-card--mid {
+  padding-left: 10px;
+}
+
+/* 이미지가 카드 안에서 꽉 차게 */
+.research-card img {
+  display: block;
+  width: 100%;
+  height: 328px; /* 스샷에 420×328, 중앙도 비슷 높이로 맞추기 */
+  -o-object-fit: cover;
+     object-fit: cover; /* 찌그러지지 않게 */
+}
+
+.kawaii {
+  position: relative;
+  display: flex;
+  align-items: center; /* 세로 중앙 배치 */
+  justify-content: center; /* 가로 중앙 배치 */
+  height: 440px;
+  overflow: hidden;
+  background-image: url("../images/tokyo1.jpg"); /* 경로는 너꺼로 */
+  background-position: center;
+  background-size: cover;
+}
+
+.kawaii-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* ⭐ 여기서 핵심: absolute 금지, flex 흐름에 태우기 */
+.kawaii-content {
+  position: relative; /* absolute 절대 X */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ 제목/본문/버튼 덩어리 자체가 가운데 */
+  width: 1280px, 100%;
+  padding: 0 24px;
+  color: #fff;
+  text-align: center; /* ✅ 글자 가운데 */
+}
+
+.kawaii-title {
+  margin: 0 0 20px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.kawaii-desc {
+  max-width: 720px; /* ✅ 이게 “2줄 느낌” 만드는 핵심 */
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.kawaii-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+}
+
+/* ********CUTE*
+********
+********
+********************* */
+.cute {
+  padding-top: 120px; /* 위 섹션과 120px */
+  padding-bottom: 120px;
+  background: #fff;
+}
+
+/* 제목 + 화살표 */
+.cute-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cute-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #000;
+}
+
+.cute-nav {
+  display: flex;
+  gap: 28px; /* 피그마에서 28 */
+}
+
+.cute-arrow {
+  width: 44px;
+  height: 44px;
+  font-size: 32px;
+  line-height: 1;
+  color: #111; /* ✅ 글자색 */
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+
+.cute-left {
+  width: 100%;
+  max-width: 602px;
+  aspect-ratio: 602/400;
+  overflow: hidden;
+}
+
+.cute-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 2칼럼 */
+.cute-body {
+  display: grid;
+  grid-template-columns: 602px 1fr; /* 왼쪽 602 고정, 오른쪽 자동 */
+  gap: 48px; /* 칼럼 사이 간격(없으면 32~48로 조절) */
+  align-items: start;
+  margin-top: 20px; /* 제목 -> 컨텐츠 간격 48 */
+}
+
+/* 왼쪽 이미지 */
+.cute-image {
+  display: block;
+  width: 602px;
+  height: 508px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 오른쪽 카드(아코디언 영역) */
+.cute-card {
+  min-height: 400px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+/* 아코디언 행 */
+.acc-item {
+  padding: 12px 0;
+  border-top: 0.0625px solid #ddd;
+}
+
+.acc-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.acc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.acc-title {
+  font-size: 24px; /* 피그마 느낌 */
+  font-weight: 800;
+  color: #111;
+}
+
+.acc-icon {
+  display: grid;
+  place-items: center;
+  width: 36px; /* 피그마에서 36x36 */
+  height: 36px;
+  font-size: 32px;
+  color: #111;
+}
+
+.acc-panel {
+  max-height: 0; /* 기본은 닫힘 */
+  overflow: hidden;
+  transition: max-height 250ms ease;
+}
+
+/* 열린 내용 */
+.acc-content {
+  max-width: 520px;
+  margin: 20px 0 0; /* 제목-본문 간격 20 */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.acc-item.is-open .acc-panel {
+  max-height: 500px;
+}
+
+.research {
+  color: #111;
+  background: #fff;
+}

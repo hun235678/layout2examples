@@ -1,0 +1,435 @@
+@use "../styles1/global/base";
+@use "../styles1/compositions";
+@use "../styles1/utilities";
+@use "./pages1/research";
+@use "./pages1/fmri";
+@use "./pages1/lorenz";
+@use "./pages1/blackbaby";
+@use "./pages1/kawaii";
+@use "./pages1/why";
+@use "./pages1/why2";
+@use "./pages1/why3";
+
+body {
+  padding-top: 92px;
+  background-color: #fff;
+}
+
+root {
+  color-scheme: light;
+}
+
+html {
+  font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px; /* ✅ 1440 - 80*2 */
+  height: 92px; /* 피그마 헤더 높이(필요하면 72/92로 조절) */
+  padding: 0; /* ✅ 좌우 80은 이미 container로 해결하니까 padding 제거 */
+  margin: 0 auto; /* ✅ 가운데 정렬 */
+}
+
+.logo {
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 48px; /* 메뉴 간격(원하는 값으로) */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative; /* overlay와 글자를 겹치게 하려고 필요 */
+  height: 680px; /* 배너 높이 (피그마 보면서 조절) */
+  overflow: hidden;
+
+  /* 배경 이미지 넣기 */
+  background-image: url("../images/baby1.webp");
+  background-position: 60% 40%;
+  background-size: cover; /* 꽉 차게 */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 25%);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px; /* 피그마 기준 */
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+.hero-title {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.hero-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ===== 히어로 아래 섹션 ===== */
+.intro {
+  padding-top: 120px; /* 너가 말한 “상단 120px 차이”  /* 아래도 비슷하게 주면 안정적 */
+  background: #fff;
+}
+
+/* 왼쪽+오른쪽 2단 배치 */
+.intro-inner {
+  display: flex;
+  gap: 100px; /* 피그마에서 여백 주로 80~120 쓰는데, 일단 100 */
+  align-items: center; /* 세로 중앙 느낌 */
+}
+
+/* 왼쪽 텍스트 프레임 (피그마 550) */
+.intro-text {
+  width: 550px;
+}
+
+/* 제목 */
+.intro-title {
+  margin: 0 0 20px; /* 제목-본문 간격 20 */
+  font-size: 32px; /* 피그마 크기에 맞춰 조절 */
+  line-height: 1.2;
+  color: #222;
+}
+
+/* 본문 */
+.intro-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* 본문 아래 버튼까지 100px */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 100px; /* 피그마에서 표시된 100 */
+  font-size: 18px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+}
+
+/* 오른쪽 이미지 영역: 남는 공간을 다 먹음 */
+.intro-media {
+  flex: 1;
+}
+
+.intro-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* 필요 없으면 삭제 */
+}
+
+/* ===== 연구자료 섹션 ===== */
+.research {
+  /* “위 섹션의 가장 밑 라인 기준 120px 간격” */
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #fff;
+  background: #fff;
+}
+
+/* 제목/설명 영역 */
+.research-head {
+  max-width: 633px; /* 스샷에서 텍스트 프레임이 633 Hug로 보임 */
+}
+
+.research-title {
+  margin: 0 0 20px; /* 제목-본문 간격 20 */
+  font-size: 32px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.research-desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* 텍스트 아래 이미지줄까지 간격(스샷에 48 표시) */
+.research-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr 1fr; /* 왼쪽 420 고정 + 나머지 2개 유동 */
+  gap: 24px; /* 카드 사이 간격(피그마 보고 조절) */
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+/* 이미지 카드 공통 */
+.research-card {
+  overflow: hidden; /* 테두리 안에서 잘리게 */
+  background: #fff;
+  border: 1px solid #ddd; /* 피그마에 테두리 느낌 있으면 유지 */
+}
+
+/* 가운데 카드만 “왼쪽 여백 10px” 반영(스샷의 10) */
+.research-card--mid {
+  padding-left: 10px;
+}
+
+/* 이미지가 카드 안에서 꽉 차게 */
+.research-card img {
+  display: block;
+  width: 100%;
+  height: 328px; /* 스샷에 420×328, 중앙도 비슷 높이로 맞추기 */
+  object-fit: cover; /* 찌그러지지 않게 */
+}
+
+.kawaii {
+  position: relative;
+  display: flex;
+  align-items: center; /* 세로 중앙 배치 */
+  justify-content: center; /* 가로 중앙 배치 */
+  height: 440px;
+  overflow: hidden;
+  background-image: url("../images/tokyo1.jpg"); /* 경로는 너꺼로 */
+  background-position: center;
+  background-size: cover;
+}
+
+.kawaii-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 35%);
+}
+
+/* ⭐ 여기서 핵심: absolute 금지, flex 흐름에 태우기 */
+.kawaii-content {
+  position: relative; /* absolute 절대 X */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ 제목/본문/버튼 덩어리 자체가 가운데 */
+  width: min(1280px), 100%;
+  padding: 0 24px;
+  color: #fff;
+  text-align: center; /* ✅ 글자 가운데 */
+}
+
+.kawaii-title {
+  margin: 0 0 20px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.kawaii-desc {
+  max-width: 720px; /* ✅ 이게 “2줄 느낌” 만드는 핵심 */
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.kawaii-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgb(255 255 255 / 70%);
+  border-radius: 999px;
+}
+
+/* ********CUTE*
+********
+********
+********************* */
+
+.cute {
+  padding-top: 120px; /* 위 섹션과 120px */
+  padding-bottom: 120px;
+  background: #fff;
+}
+
+/* 제목 + 화살표 */
+.cute-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cute-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #000;
+}
+
+.cute-nav {
+  display: flex;
+  gap: 28px; /* 피그마에서 28 */
+}
+
+.cute-arrow {
+  width: 44px;
+  height: 44px;
+  font-size: 32px;
+  line-height: 1;
+  color: #111; /* ✅ 글자색 */
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+
+.cute-left {
+  width: 100%;
+  max-width: 602px;
+  aspect-ratio: 602 / 400;
+  overflow: hidden;
+}
+
+.cute-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 2칼럼 */
+.cute-body {
+  display: grid;
+  grid-template-columns: 602px 1fr; /* 왼쪽 602 고정, 오른쪽 자동 */
+  gap: 48px; /* 칼럼 사이 간격(없으면 32~48로 조절) */
+  align-items: start;
+  margin-top: 20px; /* 제목 -> 컨텐츠 간격 48 */
+}
+
+/* 왼쪽 이미지 */
+.cute-image {
+  display: block;
+  width: 602px;
+  height: 508px;
+  object-fit: cover;
+}
+
+/* 오른쪽 카드(아코디언 영역) */
+.cute-card {
+  min-height: 400px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+/* 아코디언 행 */
+.acc-item {
+  padding: 12px 0;
+  border-top: 0.0625px solid #ddd;
+}
+
+.acc-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.acc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.acc-title {
+  font-size: 24px; /* 피그마 느낌 */
+  font-weight: 800;
+  color: #111;
+}
+
+.acc-icon {
+  display: grid;
+  place-items: center;
+  width: 36px; /* 피그마에서 36x36 */
+  height: 36px;
+  font-size: 32px;
+  color: #111;
+}
+
+.acc-panel {
+  max-height: 0; /* 기본은 닫힘 */
+  overflow: hidden;
+  transition: max-height 250ms ease;
+}
+
+/* 열린 내용 */
+.acc-content {
+  max-width: 520px;
+  margin: 20px 0 0; /* 제목-본문 간격 20 */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.acc-item.is-open .acc-panel {
+  max-height: 500px;
+}
+
+.research {
+  color: #111;
+  background: #fff;
+}
