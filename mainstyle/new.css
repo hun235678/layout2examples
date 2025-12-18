@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
+@import "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css";
 :root {
   --font-base: "Pretendard Variable";
 }
@@ -12,8 +12,8 @@
 
 html {
   -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body,
@@ -31,8 +31,8 @@ dd {
   margin-block: 0;
 }
 
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -82,7 +82,7 @@ p {
 a:not([class]) {
   color: currentcolor;
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 audio,
@@ -521,7 +521,10 @@ textarea:not([rows]) {
   --tone-neutral-100: oklch(100% 0 0deg);
   --surface: light-dark(var(--tone-neutral-98), var(--tone-neutral-4));
   --on-surface: light-dark(var(--tone-neutral-4), var(--tone-neutral-98));
-  --on-surface-variant: light-dark(var(--tone-neutral-24), var(--tone-neutral-78));
+  --on-surface-variant: light-dark(
+    var(--tone-neutral-24),
+    var(--tone-neutral-78)
+  );
   --surface-1: light-dark(var(--tone-neutral-100), var(--tone-neutral-2));
   --surface-2: light-dark(var(--tone-neutral-96), var(--tone-neutral-6));
   --surface-3: light-dark(var(--tone-neutral-94), var(--tone-neutral-8));
@@ -536,7 +539,10 @@ textarea:not([rows]) {
   --secondary: light-dark(var(--tone-green-40), var(--tone-green-62));
   --on-secondary: light-dark(var(--tone-green-100), var(--tone-green-2));
   --secondary-container: light-dark(var(--tone-green-90), var(--tone-green-12));
-  --on-secondary-container: light-dark(var(--tone-green-30), var(--tone-green-72));
+  --on-secondary-container: light-dark(
+    var(--tone-green-30),
+    var(--tone-green-72)
+  );
   --tertiary: light-dark(var(--tone-blue-40), var(--tone-blue-62));
   --on-tertiary: light-dark(var(--tone-blue-100), var(--tone-blue-2));
   --tertiary-container: light-dark(var(--tone-blue-90), var(--tone-blue-12));
@@ -667,7 +673,17 @@ ins {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: [full-width-start] minmax(0, 1fr) [breakout-start] minmax(0, var(--gutter, 0)) [content-start] min(100% - 2 * var(--gutter, 0rem), var(--wrapper-max-width, var(--max-width, 90rem)) - 2 * var(--gutter, 0rem)) [content-end] minmax(0, var(--gutter, 0)) [breakout-end] minmax(0, 1fr) [full-width-end];
+  grid-template-columns:
+    [full-width-start] minmax(0, 1fr) [breakout-start] minmax(
+      0,
+      var(--gutter, 0)
+    )
+    [content-start] min(
+      100% - 2 * var(--gutter, 0rem),
+      var(--wrapper-max-width, var(--max-width, 90rem)) - 2 *
+        var(--gutter, 0rem)
+    )
+    [content-end] minmax(0, var(--gutter, 0)) [breakout-end] minmax(0, 1fr) [full-width-end];
 }
 .grid-wrapper > * {
   grid-column: content;
@@ -675,7 +691,10 @@ ins {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(min(100%, var(--grid-min-item-size, 16rem)), 1fr));
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fill),
+    minmax(min(100%, var(--grid-min-item-size, 16rem)), 1fr)
+  );
   gap: var(--gutter, var(--space-s-l, 2.5rem));
 }
 .grid[data-equal-row] {
@@ -694,15 +713,23 @@ ins {
   flex-wrap: nowrap;
 }
 
-.sidebar[data-direction=rtl] > :last-child, .sidebar:not([data-direction]) > :first-child {
+.sidebar[data-direction="rtl"] > :last-child,
+.sidebar:not([data-direction]) > :first-child {
   flex-grow: 1;
   flex-basis: var(--sidebar-fixed-width, var(--min-width, 20rem));
 }
 
-.sidebar[data-direction=rtl] > :first-child, .sidebar:not([data-direction]) > :last-child {
+.sidebar[data-direction="rtl"] > :first-child,
+.sidebar:not([data-direction]) > :last-child {
   flex-grow: 999;
   flex-basis: 0;
-  min-inline-size: min(100%, var(--sidebar-flexible-min-width, calc(50% - 0.5 * var(--gutter, var(--space-s-l, 2.5rem)))));
+  min-inline-size: min(
+    100%,
+    var(
+      --sidebar-flexible-min-width,
+      calc(50% - 0.5 * var(--gutter, var(--space-s-l, 2.5rem)))
+    )
+  );
 }
 
 .sidebar {
@@ -722,7 +749,9 @@ ins {
 }
 .switcher > * {
   flex-grow: 1;
-  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 100%) * 999999);
+  flex-basis: calc(
+    (var(--switcher-container-min-width, 40rem) - 100%) * 999999
+  );
   max-inline-size: 100%;
 }
 
@@ -766,9 +795,9 @@ ins {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 70% 20%;
-     object-position: 70% 20%;
+  object-position: 70% 20%;
 }
 
 .hero__inner {
@@ -784,7 +813,13 @@ ins {
   position: absolute;
   inset: 0;
   /* 아래쪽 텍스트 가독성용 어두운 그라데이션 */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.38) 35%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.38) 35%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .hero__content {
@@ -862,9 +897,9 @@ ins {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: left center;
-     object-position: left center;
+  object-position: left center;
 }
 
 /* 텍스트 */
@@ -883,7 +918,7 @@ ins {
   .research-block__grid {
     grid-template-columns: 1fr;
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .research-block__figure {
     height: 280px;
@@ -920,10 +955,10 @@ ins {
   height: 100%;
   /* ✅ 도표/캡처는 cover 쓰면 무조건 잘림 → contain이 정답 */
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   /* 왼쪽 그래프는 왼쪽 정렬이 더 자연스러움 */
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 /* 반응형: 좁아지면 1열로 */
@@ -941,7 +976,7 @@ ins {
   grid-template-columns: 254px 1fr;
   /* 피그마에서 찍힌 값 */
   -moz-column-gap: 120px;
-       column-gap: 120px;
+  column-gap: 120px;
   align-items: start;
   max-width: 1280px;
   padding: 0 0 120px;
@@ -1027,10 +1062,10 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* ✅ 중요: 그래프/뇌 이미지가 오른쪽에 많아서 살짝 오른쪽 기준 */
   -o-object-position: 60% center;
-     object-position: 60% center;
+  object-position: 60% center;
   transform: scale(1.01);
 }
 
@@ -1038,7 +1073,13 @@ body {
   position: absolute;
   inset: 0;
   /* 좌하단 텍스트 가독성용 */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0.12) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.45) 35%,
+    rgba(0, 0, 0, 0.12) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .fmri-hero__content {
@@ -1071,7 +1112,7 @@ body {
   }
   .fmri-hero__bg {
     -o-object-position: 65% center;
-       object-position: 65% center;
+    object-position: 65% center;
   }
 }
 .fmri-block {
@@ -1106,7 +1147,7 @@ body {
   display: grid;
   grid-template-columns: 480px 1fr; /* 왼쪽 480 */
   -moz-column-gap: 55px;
-       column-gap: 55px; /* 스샷: 55 */
+  column-gap: 55px; /* 스샷: 55 */
   align-items: start;
 }
 
@@ -1125,9 +1166,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* 라인아트 꽉 차게 */
+  object-fit: cover; /* 라인아트 꽉 차게 */
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 /* 오른쪽: 2컬럼 텍스트 */
@@ -1135,7 +1176,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 25px;
-       column-gap: 25px; /* 스샷: 25 */
+  column-gap: 25px; /* 스샷: 25 */
   align-items: start;
 }
 
@@ -1187,7 +1228,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 
 .fmri__inner {
@@ -1216,7 +1257,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 반응형: 좁아지면 1열로 */
@@ -1256,7 +1297,7 @@ body {
   /* ✅ 피그마 느낌: 왼쪽(제목) + 120px 간격 + 오른쪽(본문) */
   grid-template-columns: 254px minmax(0, 634px);
   -moz-column-gap: 120px;
-       column-gap: 120px;
+  column-gap: 120px;
   align-items: start;
   padding: 120px 0 180px; /* 위아래 여백은 필요에 따라 조절 */
 }
@@ -1364,9 +1405,9 @@ root {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
+  object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
   -o-object-position: center;
-     object-position: center; /* 중앙 기준 */
+  object-position: center; /* 중앙 기준 */
   transform: translateZ(0); /* 살짝 렌더링 안정 */
 }
 
@@ -1374,7 +1415,12 @@ root {
 .hero-babyschema__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0) 70%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 35%,
+    rgba(0, 0, 0, 0) 70%
+  );
 }
 
 .hero__inner1 {
@@ -1475,7 +1521,7 @@ root {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .baby-schema-text {
@@ -1548,7 +1594,7 @@ root {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 오른쪽: 얼굴 비율 강조 이미지 */
@@ -1564,7 +1610,7 @@ root {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 반응형 */
@@ -1651,7 +1697,7 @@ root {
   width: 100%;
   height: 580px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .side-nav {
@@ -1792,7 +1838,7 @@ body {
   display: grid;
   grid-template-columns: 400px 400px;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 .detail-title {
@@ -1926,7 +1972,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 이미지가 프레임 꽉 차게 */
@@ -1935,9 +1981,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain; /* 캡쳐처럼 꽉 채우기 */
+  object-fit: contain; /* 캡쳐처럼 꽉 채우기 */
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 /* 반응형(선택) */
@@ -1987,7 +2033,7 @@ body {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
   -moz-column-gap: var(--col-gap);
-       column-gap: var(--col-gap);
+  column-gap: var(--col-gap);
   align-items: start;
   margin-top: 36px;
 }
@@ -2061,7 +2107,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* 텍스트 박스 400 */
@@ -2129,7 +2175,7 @@ body {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
   -moz-column-gap: var(--col-gap);
-       column-gap: var(--col-gap);
+  column-gap: var(--col-gap);
   align-items: start;
 }
 
@@ -2189,7 +2235,7 @@ body {
   width: 100%;
   height: 580px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* 텍스트블록 -> 이미지 간격 120px */
@@ -2203,7 +2249,7 @@ body {
   width: 100% !important;
   height: 580px !important;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .image-section {
@@ -2224,7 +2270,7 @@ body {
   width: 1440px;
   height: 580px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner-section {
@@ -2237,7 +2283,7 @@ body {
   width: 100%;
   height: 580px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .why-hero {
@@ -2277,7 +2323,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2287,7 +2333,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2337,7 +2383,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 상단 가로 라인 + 버튼 영역 */
@@ -2425,7 +2471,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2435,7 +2481,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2485,7 +2531,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 상단 가로 라인 + 버튼 영역 */
@@ -2568,7 +2614,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2578,7 +2624,7 @@ body {
   display: grid;
   grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
   -moz-column-gap: 78px;
-       column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px; /* 1280 - (680+522) = 78 */
   align-items: start;
   padding: 32px 0; /* 행 높이감 (필요하면 조절) */
   border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
@@ -2628,7 +2674,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* 상단 가로 라인 + 버튼 영역 */
@@ -2897,7 +2943,7 @@ body {
   width: 100%;
   height: 328px; /* 스샷에 420×328, 중앙도 비슷 높이로 맞추기 */
   -o-object-fit: cover;
-     object-fit: cover; /* 찌그러지지 않게 */
+  object-fit: cover; /* 찌그러지지 않게 */
 }
 
 .kawaii {
@@ -2907,7 +2953,7 @@ body {
   justify-content: center; /* 가로 중앙 배치 */
   height: 440px;
   overflow: hidden;
-  background-image: url("../images/tokyo1.jpg"); /* 경로는 너꺼로 */
+  background-image: url("../images/tokyo1.webp"); /* 경로는 너꺼로 */
   background-position: center;
   background-size: cover;
 }
@@ -3007,7 +3053,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* 2칼럼 */
@@ -3025,7 +3071,7 @@ body {
   width: 602px;
   height: 508px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* 오른쪽 카드(아코디언 영역) */
