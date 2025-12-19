@@ -133,7 +133,7 @@ body {
 .intro-inner {
   display: flex;
   gap: 100px; 
-  align-items: center; 
+  align-items: flex-start; 
 }
 
 
@@ -185,7 +185,8 @@ body {
 .research {
   
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 18
+Z0px;
   color: #fff;
   background: #fff;
 }
@@ -237,6 +238,8 @@ body {
   height: 328px; 
   object-fit: cover; 
 }
+
+
 
 .kawaii {
   position: relative;

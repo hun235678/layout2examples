@@ -1891,7 +1891,7 @@ body {
 
 .baby-schema-image-strip {
   padding-top: 120px;
-  padding-bottom: 180px;
+  padding-bottom: 120px;
 }
 
 .img-strip {
@@ -2740,7 +2740,7 @@ body {
 .intro-inner {
   display: flex;
   gap: 100px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .intro-text {
