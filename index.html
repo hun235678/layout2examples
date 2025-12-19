@@ -27,9 +27,12 @@
       <div class="hero-content">
         <h2 class="hero-title">왜 우리는 귀여움에 끌릴까? : 베이비스키마</h2>
         <p class="hero-desc">
-          가느다란 큰 머리 비율, 하늘코 크게 보이는 눈, 짧은 팔다리, 둥글고
-          말랑한 실루엣 등 <br />전형적인 베이비스키마 요소는 매우 강하게 귀를
-          자극한다.
+          우리는 종종 이유를 설명하지 못한 채 어떤 대상에 호감을 느낀다. 크고
+          둥근 눈, 짧은 팔다리, 말랑해 보이는 형태를 마주했을 때 드는 감정은<br />
+          단순한 취향이 아니라 인간의 인지 구조와 깊이 연결되어 있다. 인간은
+          진화 과정에서 연약한 존재를 빠르게 인식하고 보호해야 했고,
+          <br />특정한 형태적 신호에 강하게 반응하도록 설계되었다. 귀여움은
+          감각적인 인상 이전에, 생존과 돌봄을 위한 본능적인 신호였던 셈이다.
         </p>
       </div>
     </section>
@@ -39,10 +42,11 @@
           <h2 class="intro-title">베이비 스키마란 무엇인가?</h2>
 
           <p class="intro-desc">
-            가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리, 둥글고
-            말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우 강하게 가진
-            캐릭터다. 눈, 짧은 팔다리, 둥글고 말랑한 실루엣 등 전형적인
-            베이비스키마 요소를 매우 강하게 가진 캐릭터다.
+            베이비 스키마(Baby Schema)는 인간이 본능적으로 ‘귀엽다’고 느끼는
+            형태적 특징들의 집합을 의미한다. 이 개념은 생물학자 콘라트
+            로렌츠(Konrad Lorenz)에 의해 제안되었으며, 영유아의 얼굴과 신체
+            비율에서 공통적으로 발견되는 특징들이 보호 본능과 호감 반응을
+            유도한다는 점에서 출발한다.
           </p>
 
           <a class="btn-outline" href="#">자세히보기</a>
@@ -56,20 +60,20 @@
 
     <section class="research">
       <div class="container">
-        <!-- 위: 텍스트 영역 -->
         <div class="research-head">
           <h2 class="research-title">
             베이비 스키마와 관련된 실험 및 연구자료
           </h2>
           <p class="research-desc">
-            가느다란 큰 머리 비율, 하나로 크게 보이는 눈, 짧은 팔다리, 둥글고
-            말랑한 실루엣 등 전형적인 베이비스키마 요소를 매우 강하게 가진
-            캐릭터이다. 눈, 짧은 팔다리, 둥글고 말랑한 실루엣 등 전형적인
-            베이비스키마 요소를 매우 강하게 가진 캐릭터다.
+            베이비 스키마 개념은 단순한 직관이나 감성의 문제가 아니라, 여러
+            생물학적·인지과학적<br />
+            실험을 통해 반복적으로 검증되어 왔다. 동물 행동 실험부터 인간 대상
+            인지 실험, 그리고<br />
+            뇌 영상 연구에 이르기까지, 귀여움에 대한 반응은 일관된 패턴을
+            보인다.
           </p>
         </div>
 
-        <!-- 아래: 3개 이미지(가로) -->
         <div class="research-grid">
           <div class="research-card">
             <img src="./images/supernormal.webp" alt="그래프 자료" />
@@ -103,7 +107,6 @@
 
     <section class="cute">
       <div class="container">
-        <!-- 섹션 헤더 (제목 + 화살표 버튼) -->
         <div class="cute-head">
           <h2 class="cute-title">귀여움을 느끼는 요소</h2>
 
@@ -117,9 +120,7 @@
           </div>
         </div>
 
-        <!-- 본문 2칼럼 -->
         <div class="cute-body">
-          <!-- 왼쪽: 이미지 -->
           <div class="cute-left">
             <img
               class="cute-image"
@@ -128,7 +129,6 @@
             />
           </div>
 
-          <!-- 오른쪽: 아코디언 카드 -->
           <div class="cute-right">
             <div class="cute-card" id="cuteAccordion">
               <!-- 1) 미니언즈 (처음엔 열림) -->
@@ -188,8 +188,9 @@
                 <div class="acc-panel">
                   <p class="acc-content">
                     뉴비틀은 자동차임에도 불구하고 눈처럼 보이는 큰 원형
-                    헤드라이트, 둥근 실루엣, 짧고 뭉툭한 전면부 등
-                    베이비스키마와 유사한 형태 언어를 가진 디자인이다.
+                    헤드라이트, 둥근 <br />실루엣, 짧고 뭉툭한 전면부 등
+                    베이비스키마와 유사한 형태 언어를<br />
+                    가진 디자인이다.
                   </p>
                 </div>
               </div>
@@ -209,7 +210,6 @@
         btn.addEventListener("click", () => {
           const isOpen = item.classList.contains("is-open");
 
-          // ✅ 한 번에 하나만 열리게 하고 싶으면 아래 4줄 유지
           items.forEach((other) => {
             other.classList.remove("is-open");
             other
@@ -218,7 +218,6 @@
             other.querySelector(".acc-icon").textContent = "+";
           });
 
-          // 지금 눌린 애를 토글
           if (!isOpen) {
             item.classList.add("is-open");
             btn.setAttribute("aria-expanded", "true");
@@ -227,5 +226,20 @@
         });
       });
     </script>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p class="footer-title">베이비스키마란 무엇일까?</p>
+          <p class="footer-meta">제작 : 202120342 이재훈</p>
+          <p class="footer-meta">이메일 : hun235678@gmail.com</p>
+          <p class="footer-copy">
+            Copyright 2025. Jaehun lee. All Right Reserved.
+          </p>
+        </div>
+
+        <div class="footer-line" aria-hidden="true"></div>
+      </div>
+    </footer>
   </body>
 </html>

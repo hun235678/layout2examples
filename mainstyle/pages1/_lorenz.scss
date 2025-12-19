@@ -9,25 +9,25 @@ root {
 .hero-babyschema {
   position: relative;
   width: 100%;
-  max-width: 100%; /* 스샷 기준 */
-  height: 480px; /* 스샷 기준 */
+  max-width: 100%; 
+  height: 480px; 
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 0; /* 필요하면 조절 */
+  border-radius: 0; 
 }
 
-/* 배경 이미지: 섹션을 꽉 채우게 */
+
 .hero-babyschema__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
-  object-position: center; /* 중앙 기준 */
-  transform: translateZ(0); /* 살짝 렌더링 안정 */
+  object-fit: cover; 
+  object-position: center; 
+  transform: translateZ(0); 
 }
 
-/* 아래쪽 어둡게 (텍스트 가독성) */
+
 .hero-babyschema__overlay {
   position: absolute;
   inset: 0;
@@ -40,15 +40,14 @@ root {
 }
 
 .hero__inner1 {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative; 
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, calc(100% - 160px)); /* 좌우 80 유지 */
+  align-items: center; 
+  width: min(1280px, calc(100% - 160px)); 
   height: 100%;
   margin: 0 auto;
 }
 
-/* 텍스트 레이어 */
 .hero-babyschema__content {
   position: absolute;
   bottom: 48px;
@@ -83,7 +82,7 @@ root {
   opacity: 0.95;
 }
 
-/* 반응형: 모바일에서 패딩/폰트 줄이기 */
+
 @media (width <= 768px) {
   .hero-babyschema {
     height: 420px;
@@ -101,12 +100,12 @@ root {
   }
 }
 
-// 여기까지 hero
+
 
 .baby-schema-section {
   max-width: 1280px;
   padding: 0;
-  margin: 120px auto 0; /* 위 섹션과 120px */
+  margin: 120px auto 0; 
 }
 
 .baby-schema-title1 {
@@ -117,12 +116,11 @@ root {
   letter-spacing: -0.02em;
 }
 
-/* ✅ 피그마 의도: 타이틀 아래 가로 divider */
 .baby-schema-divider1 {
   width: 100%;
   height: 1px;
-  margin: 20px 0 32px; /* 타이틀-선 간격 / 선-콘텐츠 간격 */
-  background: #cfcfcf; /* 스샷처럼 연회색 */
+  margin: 20px 0 32px;
+  background: #cfcfcf;
 }
 
 .baby-schema-content {
@@ -132,9 +130,9 @@ root {
 
 .baby-schema-image {
   flex-shrink: 0;
-  width: 480px; /* 피그마: 480 */
-  height: 320px; /* 피그마: 320 */
-  margin-right: 56px; /* 피그마: 56 */
+  width: 480px;
+  height: 320px;
+  margin-right: 56px;
 }
 
 .baby-schema-image img {
@@ -146,9 +144,9 @@ root {
 
 .baby-schema-text {
   display: grid;
-  grid-template-columns: 360px 360px; /* 피그마: 360 + 360 */
-  gap: 24px; /* 피그마: 24 */
-  padding-top: 8px; /* 스샷처럼 텍스트가 살짝 내려앉게 */
+  grid-template-columns: 360px 360px;
+  gap: 24px;
+  padding-top: 8px;
 }
 
 .baby-schema-text p {
@@ -158,14 +156,13 @@ root {
   color: #111;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-section {
     padding: 0 20px;
   }
 
   .baby-schema-text {
-    grid-template-columns: 1fr 1fr; /* 좁아지면 유동 */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -192,27 +189,24 @@ root {
   }
 }
 
-/* 전체 섹션 */
 .baby-schema-analysis {
   max-width: 1280px;
   padding: 0;
-  margin: 120px auto 0; /* ⬅️ 위 콘텐츠와 120px */
+  margin: 120px auto 0;
 }
 
-/* 내부 레이아웃 */
 .baby-schema-analysis-inner {
   display: flex;
-  gap: 32px; /* 피그마: 32 */
+  gap: 32px;
   align-items: stretch;
 }
 
-/* 왼쪽: 6컷 이미지 */
 .analysis-image-left {
   flex-shrink: 0;
-  width: 624px; /* 피그마 기준 */
+  width: 624px;
   height: 740px;
   background: #fff;
-  border: 1px solid #d0d0d0; /* 피그마 테두리 */
+  border: 1px solid #d0d0d0;
 }
 
 .analysis-image-left img {
@@ -222,7 +216,6 @@ root {
   object-fit: contain;
 }
 
-/* 오른쪽: 얼굴 비율 강조 이미지 */
 .analysis-image-right {
   flex: 1;
   height: 740px;
@@ -237,7 +230,6 @@ root {
   object-fit: contain;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-analysis {
     padding: 0 20px;
@@ -263,21 +255,19 @@ root {
 
 .baby-schema-meaning {
   max-width: 1280px;
-  padding: 0;
-  margin: 120px auto 0; /* ⬅ 위 콘텐츠와 120px */
+  padding-bottom: 180px;
+  margin: 120px auto 0;
 }
 
-/* 내부 정렬 */
 .baby-schema-meaning-inner {
   display: flex;
   align-items: flex-start;
-  width: 1008px; /* 피그마 기준 */
+  width: 1008px;
 }
 
-/* 제목 */
 .baby-schema-meaning-title {
   flex-shrink: 0;
-  width: 254px; /* Hug 느낌 고정 */
+  width: 254px;
   margin: 0;
   font-size: 32px;
   font-weight: 800;
@@ -285,17 +275,15 @@ root {
   letter-spacing: -0.02em;
 }
 
-/* 본문 */
 .baby-schema-meaning-text {
   width: 634px;
-  margin-top: 4px; /* 베이스라인 살짝 맞춤 */
-  margin-left: 120px; /* 피그마: 제목과 본문 간격 */
+  margin-top: 4px; \
+  margin-left: 120px; 
   font-size: 18px;
   line-height: 1.75;
   color: #111;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-meaning {
     padding: 0 20px;
@@ -318,12 +306,12 @@ root {
   }
 }
 
-/* 텍스트블록 -> 이미지 간격 120px */
+
 .kawaii-image-wrap {
   margin-top: 120px;
 }
 
-/* 1440x580 */
+
 .kawaii-image {
   display: block;
   width: 100%;
@@ -335,9 +323,9 @@ root {
   position: fixed;
   top: 50%;
   left: 0;
-  z-index: 900; // 헤더(1000)보다 아래로 두고 싶으면 이렇게
+  z-index: 900; 
   width: 100%;
-  pointer-events: none; // 전체는 클릭 막고
+  pointer-events: none; 
   transform: translateY(-50%);
 }
 
@@ -352,12 +340,12 @@ root {
   line-height: 1;
   color: #111;
   text-decoration: none;
-  pointer-events: auto; // 버튼만 클릭 되게
+  pointer-events: auto; 
   background: #fff;
   border: 1px solid #111;
   border-radius: 50%;
 
-  // 선택: 살짝 그림자
+
   box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
 }
 

@@ -1,26 +1,23 @@
 :root {
-  --left-col: 360px; /* ✅ 여기 값만 피그마에 맞게 조절하면 전체가 딱 맞음 */
-  --col-gap: 56px; /* 위에서 쓰던 gap */
+  --left-col: 360px;
+  --col-gap: 56px;
 }
 
 .kawaii-section {
   background: #0b0b0f;
 }
 
-/* 1440 캔버스 + 좌우 80 = 내용폭 1280 */
 .kawaii-inner {
   max-width: 1440px;
-  padding: 80px 80px 0; /* 네비 아래 80px이면: 섹션 시작이 네비 바로 아래라는 가정 */
+  padding: 80px 80px 0;
   margin: 0 auto;
 }
 
-/* 선 */
 .kawaii-line {
   height: 1px;
   background: rgb(255 255 255 / 60%);
 }
 
-/* 선 아래 36px */
 .kawaii-row {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
@@ -29,7 +26,6 @@
   margin-top: 36px;
 }
 
-/* 왼쪽 타이틀 */
 .kawaii-title1 {
   margin: 0;
   font-size: 44px;
@@ -39,18 +35,14 @@
   white-space: nowrap;
 }
 
-/* 오른쪽 본문 */
 .kawaii-body {
   max-width: 760px;
   margin: 0;
   font-size: 18px;
   line-height: 1.9;
   color: rgb(255 255 255 / 80%);
-
-  /* margin-left:auto 제거 */
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .kawaii-inner {
     padding: 80px 24px 0;
@@ -72,25 +64,22 @@
   }
 }
 
-/* 위 섹션과 120px 간격 */
 .kawaii-detail {
   margin-top: 120px;
 }
 
 .kawaii-inner1 {
   max-width: 1440px;
-  padding: 0 80px; /* 1440에서 좌우 80 => 1280 */
+  padding: 0 80px;
   margin: 0 auto;
 }
 
-/* 좌(이미지) + 우(텍스트) */
 .kawaii-detail-row {
   display: flex;
-  gap: 80px; /* 이미지-텍스트 간격 80 */
+  gap: 80px;
   align-items: flex-start;
 }
 
-/* 이미지 620x440 */
 .kawaii-detail-media {
   width: 620px;
   height: 440px;
@@ -105,12 +94,10 @@
   object-fit: cover;
 }
 
-/* 텍스트 박스 400 */
 .kawaii-detail-text {
   width: 400px;
 }
 
-/* 타이틀 */
 .kawaii-detail-title {
   margin: 0;
   font-size: 32px;
@@ -118,17 +105,13 @@
   color: rgb(255 255 255 / 92%);
 }
 
-/* 타이틀 아래 라인 (이미지상으로 타이틀-라인 간격이 살짝 있음) */
 .kawaii-detail-rule {
   height: 1px;
-  margin-top: 16px; /* 타이틀 아래 여백 */
+  margin-top: 16px;
   margin-bottom: 32px;
   background: rgb(255 255 255 / 55%);
-
-  /* 라인 아래(본문까지) 여백 */
 }
 
-/* 본문 */
 .kawaii-detail-body {
   margin: 0;
   font-size: 18px;
@@ -136,7 +119,6 @@
   color: rgb(255 255 255 / 80%);
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .kawaii-inner {
     padding: 0 24px;
@@ -158,19 +140,16 @@
   }
 }
 
-/* 섹션 간격 120px */
 .text-blocks {
   margin-top: 120px;
 }
 
-/* 1440 캔버스 */
 .text-blocks-inner {
   max-width: 1440px;
   padding: 0 80px;
   margin: 0 auto;
 }
 
-/* 개별 블록 */
 .text-block {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
@@ -178,12 +157,10 @@
   align-items: start;
 }
 
-/* 블록 사이 간격 */
 .text-block + .text-block {
   margin-top: 120px;
 }
 
-/* 왼쪽 타이틀 */
 .text-block-title {
   margin: 0;
   font-size: 32px;
@@ -192,7 +169,6 @@
   white-space: nowrap;
 }
 
-/* 오른쪽 본문 */
 .text-block-body {
   max-width: 760px;
   margin: 0;
@@ -201,7 +177,6 @@
   color: rgb(255 255 255 / 80%);
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .text-blocks-inner {
     padding: 0 24px;
@@ -221,18 +196,15 @@
   }
 }
 
-/* 섹션 간격 120px */
 .section {
   margin-top: 120px;
 }
 
-/* 1440 캔버스 래퍼 */
 .frame-1440 {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* 1440 * 580 고정 */
 .image-1440 {
   display: block;
   width: 100%;
@@ -240,12 +212,10 @@
   object-fit: cover;
 }
 
-/* 텍스트블록 -> 이미지 간격 120px */
 .kawaii-image-wrap {
   margin-top: 120px;
 }
 
-/* 1440x580 */
 .kawaii-image {
   display: block;
   width: 100% !important;
@@ -275,7 +245,7 @@
 
 .banner-section {
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
 }
 
 .banner-img {

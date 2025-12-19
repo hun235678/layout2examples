@@ -8,7 +8,7 @@ body {
 
 .fmri-hero {
   position: relative;
-  height: 440px; /* 캡처: 1440 x 440 */
+  height: 440px;
   overflow: hidden;
   background: #000;
 }
@@ -19,8 +19,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  /* ✅ 중요: 그래프/뇌 이미지가 오른쪽에 많아서 살짝 오른쪽 기준 */
   object-position: 60% center;
   transform: scale(1.01);
 }
@@ -28,8 +26,6 @@ body {
 .fmri-hero__overlay {
   position: absolute;
   inset: 0;
-
-  /* 좌하단 텍스트 가독성용 */
   background: linear-gradient(
     to top,
     rgb(0 0 0 / 70%) 0%,
@@ -42,8 +38,6 @@ body {
 .fmri-hero__content {
   position: absolute;
   bottom: 48px;
-
-  // left: clamp(24px, 5vw, 64px);
   z-index: 2;
   max-width: 720px;
   color: #fff;
@@ -64,7 +58,6 @@ body {
   color: rgb(255 255 255 / 90%);
 }
 
-/* 모바일 */
 @media (width <= 640px) {
   .fmri-hero {
     height: 360px;
@@ -76,19 +69,19 @@ body {
 }
 
 .fmri-block {
-  padding: 120px 0 0; /* 위아래만 */
+  padding: 120px 0 0;
   background: #fff;
 }
 
 .fmri-block__inner {
-  width: 1280px; /* max-width 말고 width로 고정 */
-  padding: 0; /* 좌우 패딩 제거 */
+  width: 1280px;
+  padding: 0;
   margin: 0 auto;
 }
 
 .fmri-block__title {
   display: flex;
-  align-items: flex-end; /* 글자가 아래쪽에 붙는 느낌 */
+  align-items: flex-end;
   margin: 0;
   font-size: 32px;
   font-weight: 800;
@@ -99,45 +92,44 @@ body {
 
 .fmri-block__rule {
   height: 2px;
-  margin: 20px 0 36px; /* 스샷: 아래 간격 36 */
+  margin: 20px 0 36px;
   background: #e8e8e8;
 }
 
 .fmri-block__grid {
   display: grid;
-  grid-template-columns: 480px 1fr; /* 왼쪽 480 */
-  column-gap: 55px; /* 스샷: 55 */
+  grid-template-columns: 480px 1fr;
+  column-gap: 55px;
   align-items: start;
 }
 
 .fmri-block__figure {
   width: 480px;
-  height: 360px; /* 스샷: 480 x 360 */
+  height: 360px;
   margin: 0;
   overflow: hidden;
   background: #fff;
-  border: 1px solid #d9d9d9; // ✅ 테두리
-  border-radius: 2px; // 피그마 느낌
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
 }
 
 .fmri-block__figure img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 라인아트 꽉 차게 */
+  object-fit: cover;
   object-position: center;
 }
 
-/* 오른쪽: 2컬럼 텍스트 */
 .fmri-block__cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 25px; /* 스샷: 25 */
+  column-gap: 25px;
   align-items: start;
 }
 
 .fmri-block__col {
-  font-size: 18px; /* 스샷 느낌(큰 본문) */
+  font-size: 18px;
   line-height: 1.85;
   color: #111;
 }
@@ -146,7 +138,6 @@ body {
   margin: 0 0 18px;
 }
 
-/* 반응형 */
 @media (width <= 1100px) {
   .fmri-block__grid {
     grid-template-columns: 1fr;
@@ -188,14 +179,14 @@ body {
 .fmri-images__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 32px; // 피그마에서 본 간격 느낌
+  column-gap: 32px;
 }
 
 .fmri__inner {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative;
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, calc(100% - 160px)); /* 좌우 80 유지 */
+  align-items: center;
+  width: min(1280px, calc(100% - 160px));
   height: 100%;
   margin: 0 auto;
 }
@@ -205,11 +196,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 740px; // 피그마 캡쳐가 624 x 740 느낌이었지
+  height: 740px;
   margin: 0;
-  overflow: hidden; // 혹시 삐져나오면 컷
+  overflow: hidden;
   background: #fff;
-  border: 1px solid #d9d9d9; // ✅ “각 칸 테두리”
+  border: 1px solid #d9d9d9;
 }
 
 .fmri-images__figure img {
@@ -219,7 +210,6 @@ body {
   object-fit: contain;
 }
 
-/* 반응형: 좁아지면 1열로 */
 @media (width <= 960px) {
   .fmri-images__grid {
     grid-template-columns: 1fr;
@@ -241,40 +231,35 @@ body {
 .frame1440 {
   box-sizing: border-box;
   width: min(1440px, 100%);
-  padding: 0 80px; /* 피그마 안쪽 80 */
+  padding: 0 80px;
   margin: 0 auto;
 }
 
 .content1280 {
-  max-width: 1280px; /* 내부 콘텐츠 폭 */
+  max-width: 1280px;
 }
 
-/* ===== meaning block ===== */
 .meaning-block {
   background: #fff;
 }
 
 .meaning-block__grid {
   display: grid;
-
-  /* ✅ 피그마 느낌: 왼쪽(제목) + 120px 간격 + 오른쪽(본문) */
   grid-template-columns: 254px minmax(0, 634px);
   column-gap: 120px;
   align-items: start;
-  padding: 120px 0 180px; /* 위아래 여백은 필요에 따라 조절 */
+  padding: 120px 0 180px;
 }
 
-/* 제목 */
 .meaning-block__title {
   margin: 0;
-  font-size: 32px; /* 원하면 40으로 올려도 됨 */
+  font-size: 32px;
   font-weight: 800;
   line-height: 1.35;
   color: #000;
   letter-spacing: -0.02em;
 }
 
-/* 본문: 찢어짐 방지 포함 */
 .meaning-block__text {
   font-size: 18px;
   line-height: 1.85;
@@ -282,18 +267,14 @@ body {
   word-break: keep-all;
   overflow-wrap: break-word;
   white-space: normal;
-
-  /* ✅ “한 글자씩 세로로 찢어짐” 방지 */
   writing-mode: horizontal-tb;
 }
 
-/* 아래 회색 바닥(너가 올린 스샷 느낌) */
 .meaning-block__footer {
   height: 240px;
   background: #eaeaea;
 }
 
-/* ===== 반응형: 화면이 좁아지면 1컬럼으로 ===== */
 @media (width <= 900px) {
   .frame1440 {
     padding: 0 24px;
@@ -309,9 +290,9 @@ body {
   position: fixed;
   top: 50%;
   left: 0;
-  z-index: 900; // 헤더(1000)보다 아래로 두고 싶으면 이렇게
+  z-index: 900;
   width: 100%;
-  pointer-events: none; // 전체는 클릭 막고
+  pointer-events: none;
   transform: translateY(-50%);
 }
 
@@ -326,12 +307,10 @@ body {
   line-height: 1;
   color: #111;
   text-decoration: none;
-  pointer-events: auto; // 버튼만 클릭 되게
+  pointer-events: auto;
   background: #fff;
   border: 1px solid #111;
   border-radius: 50%;
-
-  // 선택: 살짝 그림자
   box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
 }
 

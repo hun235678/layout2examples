@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  height: 676px; /* 스샷 비율 느낌 */
+  height: 676px;
   min-height: 520px;
-  max-height: 76vh; /* 너무 커지지 않게 */
+  max-height: 76vh;
   overflow: hidden;
   background: #111;
 }
@@ -17,10 +17,10 @@
 }
 
 .hero__inner {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative;
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, calc(100% - 160px)); /* 좌우 80 유지 */
+  align-items: center;
+  width: min(1280px, calc(100% - 160px));
   height: 100%;
   margin: 0 auto;
 }
@@ -28,8 +28,6 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-
-  /* 아래쪽 텍스트 가독성용 어두운 그라데이션 */
   background: linear-gradient(
     to top,
     rgb(0 0 0 / 62%) 0%,
@@ -62,7 +60,6 @@
   color: rgb(255 255 255 / 88%);
 }
 
-/* 모바일에서 높이/여백 조금 압축 */
 @media (width <= 640px) {
   .hero {
     min-height: 460px;
@@ -94,26 +91,20 @@
 
 .research-block__grid {
   display: grid;
-
-  /* 왼쪽 이미지 + 오른쪽 2컬럼 텍스트 */
   grid-template-columns: 480px 1fr 1fr;
   gap: 24px 58px;
-
-  /* 스샷 느낌: 이미지↔텍스트 사이 넓게, 텍스트↔텍스트는 조금 좁게 */
-
   align-items: start;
 }
 
 .research-block__figure {
   width: 100%;
-  height: 240px; /* 스샷에 480x240 느낌 */
+  height: 240px;
   margin: 0;
   overflow: hidden;
   background: #fff;
   border-radius: 2px;
 }
 
-/* ✅ “피그마처럼 안 잘리게” = contain 추천 (도식/라인아트는 이게 정답) */
 .research-block__figure img {
   display: block;
   width: 100%;
@@ -122,7 +113,6 @@
   object-position: left center;
 }
 
-/* 텍스트 */
 .research-block__col {
   font-size: 18px;
   line-height: 1.85;
@@ -133,7 +123,6 @@
   margin: 0 0 16px;
 }
 
-/* 반응형: 좁아지면 1열로 쌓기 */
 @media (width <= 1024px) {
   .research-block__grid {
     grid-template-columns: 1fr;
@@ -154,8 +143,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-
-  /* 피그마에서 1280 x 740 느낌 */
   align-items: stretch;
   max-width: 1280px;
   margin: 0 auto;
@@ -163,7 +150,7 @@
 
 .figure-split__panel {
   display: flex;
-  height: 740px; /* 피그마 Hug 740에 맞춤 */
+  height: 740px;
   margin: 0;
   overflow: hidden;
   background: #fff;
@@ -175,15 +162,10 @@
   display: block;
   width: 100%;
   height: 100%;
-
-  /* ✅ 도표/캡처는 cover 쓰면 무조건 잘림 → contain이 정답 */
   object-fit: contain;
-
-  /* 왼쪽 그래프는 왼쪽 정렬이 더 자연스러움 */
   object-position: center;
 }
 
-/* 반응형: 좁아지면 1열로 */
 @media (width <= 1024px) {
   .figure-split__inner {
     grid-template-columns: 1fr;
@@ -196,15 +178,11 @@
 
 .meaning1 {
   display: grid;
-
-  /* 제목 고정폭 + 본문 가변 */
   grid-template-columns: 254px 1fr;
-
-  /* 피그마에서 찍힌 값 */
   column-gap: 120px;
   align-items: start;
   max-width: 1280px;
-  padding: 0 0 120px;
+  padding: 0 0 180px;
   margin: 0 auto;
 }
 
@@ -230,9 +208,9 @@
   position: fixed;
   top: 50%;
   left: 0;
-  z-index: 900; // 헤더(1000)보다 아래로 두고 싶으면 이렇게
+  z-index: 900;
   width: 100%;
-  pointer-events: none; // 전체는 클릭 막고
+  pointer-events: none;
   transform: translateY(-50%);
 }
 
@@ -247,12 +225,10 @@
   line-height: 1;
   color: #111;
   text-decoration: none;
-  pointer-events: auto; // 버튼만 클릭 되게
+  pointer-events: auto;
   background: #fff;
   border: 1px solid #111;
   border-radius: 50%;
-
-  // 선택: 살짝 그림자
   box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
 }
 

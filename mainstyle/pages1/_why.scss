@@ -3,16 +3,16 @@
 }
 
 .why-container {
-  max-width: 1280px; /* 1440 - 80*2 */
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .why-text {
-  max-width: 722px; /* Figma Hug */
+  max-width: 722px;
 }
 
 .why-title {
-  margin: 0 0 20px; /* 제목-본문 간격 */
+  margin: 0 0 20px;
   font-size: 44px;
   font-weight: 700;
   line-height: 1.25;
@@ -24,48 +24,44 @@
   line-height: 1.6;
 }
 
-/* 리스트 전체: 위아래 구분선 */
 .why-list {
-  padding-bottom: 200px;
-  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+  padding-bottom: 180px;
+  margin-top: 120px;
 }
 
-/* 아이템 하나 */
 .why-item1 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  grid-template-columns: 680px 522px;
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .why-item2 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  grid-template-columns: 680px 522px;
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-/* 텍스트 */
 .why-item__title {
-  margin: 0 0 20px; /* 제목-본문 20 */
+  margin: 0 0 20px;
   font-size: 28px;
   font-weight: 700;
 }
 
 .why-item__desc {
-  max-width: 680px; /* Hug 680 */
-  margin: 0 0 64px; /* 본문-버튼 64 */
+  max-width: 680px;
+  margin: 0 0 64px;
   font-size: 18px;
   line-height: 1.6;
   color: #8c8c8c;
 }
 
-/* 버튼(116 x 41 Hug) */
 .why-item__btn {
   display: inline-flex;
   align-items: center;
@@ -79,7 +75,6 @@
   border-radius: 999px;
 }
 
-/* 이미지 영역(522 x 380) */
 .why-item__media {
   display: flex;
   align-items: center;
@@ -95,16 +90,12 @@
   object-fit: contain;
 }
 
-// 여기부터
-
-/* 상단 가로 라인 + 버튼 영역 */
 .why-list-top {
   position: relative;
   height: 48px;
   margin-bottom: 20px;
 }
 
-/* 버튼 묶음 */
 .why-list-nav {
   position: absolute;
   top: 50%;
@@ -114,7 +105,6 @@
   transform: translateY(-50%);
 }
 
-/* 버튼 하나 */
 .why-nav-btn {
   display: flex;
   align-items: center;
@@ -134,7 +124,6 @@
   margin: 0 auto;
 }
 
-/* 혹시 튀어나오면 강제 */
 .why-item {
   box-sizing: border-box;
   width: 100%;

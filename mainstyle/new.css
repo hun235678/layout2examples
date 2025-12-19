@@ -782,9 +782,9 @@ ins {
 
 .hero {
   position: relative;
-  height: 676px; /* 스샷 비율 느낌 */
+  height: 676px;
   min-height: 520px;
-  max-height: 76vh; /* 너무 커지지 않게 */
+  max-height: 76vh;
   overflow: hidden;
   background: #111;
 }
@@ -801,10 +801,10 @@ ins {
 }
 
 .hero__inner {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative;
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  align-items: center;
+  width: min(1280px, 100% - 160px);
   height: 100%;
   margin: 0 auto;
 }
@@ -812,7 +812,7 @@ ins {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  /* 아래쪽 텍스트 가독성용 어두운 그라데이션 */
+
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.62) 0%,
@@ -845,7 +845,6 @@ ins {
   color: rgba(255, 255, 255, 0.88);
 }
 
-/* 모바일에서 높이/여백 조금 압축 */
 @media (width <= 640px) {
   .hero {
     min-height: 460px;
@@ -875,23 +874,22 @@ ins {
 
 .research-block__grid {
   display: grid;
-  /* 왼쪽 이미지 + 오른쪽 2컬럼 텍스트 */
+
   grid-template-columns: 480px 1fr 1fr;
   gap: 24px 58px;
-  /* 스샷 느낌: 이미지↔텍스트 사이 넓게, 텍스트↔텍스트는 조금 좁게 */
+
   align-items: start;
 }
 
 .research-block__figure {
   width: 100%;
-  height: 240px; /* 스샷에 480x240 느낌 */
+  height: 240px;
   margin: 0;
   overflow: hidden;
   background: #fff;
   border-radius: 2px;
 }
 
-/* ✅ “피그마처럼 안 잘리게” = contain 추천 (도식/라인아트는 이게 정답) */
 .research-block__figure img {
   display: block;
   width: 100%;
@@ -902,7 +900,6 @@ ins {
   object-position: left center;
 }
 
-/* 텍스트 */
 .research-block__col {
   font-size: 18px;
   line-height: 1.85;
@@ -913,7 +910,6 @@ ins {
   margin: 0 0 16px;
 }
 
-/* 반응형: 좁아지면 1열로 쌓기 */
 @media (width <= 1024px) {
   .research-block__grid {
     grid-template-columns: 1fr;
@@ -933,7 +929,7 @@ ins {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  /* 피그마에서 1280 x 740 느낌 */
+
   align-items: stretch;
   max-width: 1280px;
   margin: 0 auto;
@@ -941,7 +937,7 @@ ins {
 
 .figure-split__panel {
   display: flex;
-  height: 740px; /* 피그마 Hug 740에 맞춤 */
+  height: 740px;
   margin: 0;
   overflow: hidden;
   background: #fff;
@@ -953,15 +949,14 @@ ins {
   display: block;
   width: 100%;
   height: 100%;
-  /* ✅ 도표/캡처는 cover 쓰면 무조건 잘림 → contain이 정답 */
+
   -o-object-fit: contain;
   object-fit: contain;
-  /* 왼쪽 그래프는 왼쪽 정렬이 더 자연스러움 */
+
   -o-object-position: center;
   object-position: center;
 }
 
-/* 반응형: 좁아지면 1열로 */
 @media (width <= 1024px) {
   .figure-split__inner {
     grid-template-columns: 1fr;
@@ -972,9 +967,9 @@ ins {
 }
 .meaning1 {
   display: grid;
-  /* 제목 고정폭 + 본문 가변 */
+
   grid-template-columns: 254px 1fr;
-  /* 피그마에서 찍힌 값 */
+
   -moz-column-gap: 120px;
   column-gap: 120px;
   align-items: start;
@@ -1051,7 +1046,7 @@ body {
 
 .fmri-hero {
   position: relative;
-  height: 440px; /* 캡처: 1440 x 440 */
+  height: 440px;
   overflow: hidden;
   background: #000;
 }
@@ -1063,7 +1058,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* ✅ 중요: 그래프/뇌 이미지가 오른쪽에 많아서 살짝 오른쪽 기준 */
+
   -o-object-position: 60% center;
   object-position: 60% center;
   transform: scale(1.01);
@@ -1072,7 +1067,7 @@ body {
 .fmri-hero__overlay {
   position: absolute;
   inset: 0;
-  /* 좌하단 텍스트 가독성용 */
+
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 0%,
@@ -1105,7 +1100,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* 모바일 */
 @media (width <= 640px) {
   .fmri-hero {
     height: 360px;
@@ -1116,19 +1110,19 @@ body {
   }
 }
 .fmri-block {
-  padding: 120px 0 0; /* 위아래만 */
+  padding: 120px 0 0;
   background: #fff;
 }
 
 .fmri-block__inner {
-  width: 1280px; /* max-width 말고 width로 고정 */
-  padding: 0; /* 좌우 패딩 제거 */
+  width: 1280px;
+  padding: 0;
   margin: 0 auto;
 }
 
 .fmri-block__title {
   display: flex;
-  align-items: flex-end; /* 글자가 아래쪽에 붙는 느낌 */
+  align-items: flex-end;
   margin: 0;
   font-size: 32px;
   font-weight: 800;
@@ -1139,21 +1133,21 @@ body {
 
 .fmri-block__rule {
   height: 2px;
-  margin: 20px 0 36px; /* 스샷: 아래 간격 36 */
+  margin: 20px 0 36px;
   background: #e8e8e8;
 }
 
 .fmri-block__grid {
   display: grid;
-  grid-template-columns: 480px 1fr; /* 왼쪽 480 */
+  grid-template-columns: 480px 1fr;
   -moz-column-gap: 55px;
-  column-gap: 55px; /* 스샷: 55 */
+  column-gap: 55px;
   align-items: start;
 }
 
 .fmri-block__figure {
   width: 480px;
-  height: 360px; /* 스샷: 480 x 360 */
+  height: 360px;
   margin: 0;
   overflow: hidden;
   background: #fff;
@@ -1166,22 +1160,21 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover; /* 라인아트 꽉 차게 */
+  object-fit: cover;
   -o-object-position: center;
   object-position: center;
 }
 
-/* 오른쪽: 2컬럼 텍스트 */
 .fmri-block__cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 25px;
-  column-gap: 25px; /* 스샷: 25 */
+  column-gap: 25px;
   align-items: start;
 }
 
 .fmri-block__col {
-  font-size: 18px; /* 스샷 느낌(큰 본문) */
+  font-size: 18px;
   line-height: 1.85;
   color: #111;
 }
@@ -1190,7 +1183,6 @@ body {
   margin: 0 0 18px;
 }
 
-/* 반응형 */
 @media (width <= 1100px) {
   .fmri-block__grid {
     grid-template-columns: 1fr;
@@ -1232,10 +1224,10 @@ body {
 }
 
 .fmri__inner {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative;
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  align-items: center;
+  width: min(1280px, 100% - 160px);
   height: 100%;
   margin: 0 auto;
 }
@@ -1260,7 +1252,6 @@ body {
   object-fit: contain;
 }
 
-/* 반응형: 좁아지면 1열로 */
 @media (width <= 960px) {
   .fmri-images__grid {
     grid-template-columns: 1fr;
@@ -1279,40 +1270,37 @@ body {
 .frame1440 {
   box-sizing: border-box;
   width: min(1440px, 100%);
-  padding: 0 80px; /* 피그마 안쪽 80 */
+  padding: 0 80px;
   margin: 0 auto;
 }
 
 .content1280 {
-  max-width: 1280px; /* 내부 콘텐츠 폭 */
+  max-width: 1280px;
 }
 
-/* ===== meaning block ===== */
 .meaning-block {
   background: #fff;
 }
 
 .meaning-block__grid {
   display: grid;
-  /* ✅ 피그마 느낌: 왼쪽(제목) + 120px 간격 + 오른쪽(본문) */
+
   grid-template-columns: 254px minmax(0, 634px);
   -moz-column-gap: 120px;
   column-gap: 120px;
   align-items: start;
-  padding: 120px 0 180px; /* 위아래 여백은 필요에 따라 조절 */
+  padding: 120px 0 180px;
 }
 
-/* 제목 */
 .meaning-block__title {
   margin: 0;
-  font-size: 32px; /* 원하면 40으로 올려도 됨 */
+  font-size: 32px;
   font-weight: 800;
   line-height: 1.35;
   color: #000;
   letter-spacing: -0.02em;
 }
 
-/* 본문: 찢어짐 방지 포함 */
 .meaning-block__text {
   font-size: 18px;
   line-height: 1.85;
@@ -1320,17 +1308,15 @@ body {
   word-break: keep-all;
   overflow-wrap: break-word;
   white-space: normal;
-  /* ✅ “한 글자씩 세로로 찢어짐” 방지 */
+
   writing-mode: horizontal-tb;
 }
 
-/* 아래 회색 바닥(너가 올린 스샷 느낌) */
 .meaning-block__footer {
   height: 240px;
   background: #eaeaea;
 }
 
-/* ===== 반응형: 화면이 좁아지면 1컬럼으로 ===== */
 @media (width <= 900px) {
   .frame1440 {
     padding: 0 24px;
@@ -1391,27 +1377,25 @@ root {
 .hero-babyschema {
   position: relative;
   width: 100%;
-  max-width: 100%; /* 스샷 기준 */
-  height: 480px; /* 스샷 기준 */
+  max-width: 100%;
+  height: 480px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 0; /* 필요하면 조절 */
+  border-radius: 0;
 }
 
-/* 배경 이미지: 섹션을 꽉 채우게 */
 .hero-babyschema__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover; /* 이미지 비율 유지하면서 꽉 채움 */
+  object-fit: cover;
   -o-object-position: center;
-  object-position: center; /* 중앙 기준 */
-  transform: translateZ(0); /* 살짝 렌더링 안정 */
+  object-position: center;
+  transform: translateZ(0);
 }
 
-/* 아래쪽 어둡게 (텍스트 가독성) */
 .hero-babyschema__overlay {
   position: absolute;
   inset: 0;
@@ -1424,15 +1408,14 @@ root {
 }
 
 .hero__inner1 {
-  position: relative; /* overlay 위로 올라오게 */
+  position: relative;
   display: flex;
-  align-items: center; /* 세로 가운데 (원하면 flex-start로) */
-  width: min(1280px, 100% - 160px); /* 좌우 80 유지 */
+  align-items: center;
+  width: min(1280px, 100% - 160px);
   height: 100%;
   margin: 0 auto;
 }
 
-/* 텍스트 레이어 */
 .hero-babyschema__content {
   position: absolute;
   bottom: 48px;
@@ -1467,7 +1450,6 @@ root {
   opacity: 0.95;
 }
 
-/* 반응형: 모바일에서 패딩/폰트 줄이기 */
 @media (width <= 768px) {
   .hero-babyschema {
     height: 420px;
@@ -1485,7 +1467,7 @@ root {
 .baby-schema-section {
   max-width: 1280px;
   padding: 0;
-  margin: 120px auto 0; /* 위 섹션과 120px */
+  margin: 120px auto 0;
 }
 
 .baby-schema-title1 {
@@ -1496,12 +1478,11 @@ root {
   letter-spacing: -0.02em;
 }
 
-/* ✅ 피그마 의도: 타이틀 아래 가로 divider */
 .baby-schema-divider1 {
   width: 100%;
   height: 1px;
-  margin: 20px 0 32px; /* 타이틀-선 간격 / 선-콘텐츠 간격 */
-  background: #cfcfcf; /* 스샷처럼 연회색 */
+  margin: 20px 0 32px;
+  background: #cfcfcf;
 }
 
 .baby-schema-content {
@@ -1511,9 +1492,9 @@ root {
 
 .baby-schema-image {
   flex-shrink: 0;
-  width: 480px; /* 피그마: 480 */
-  height: 320px; /* 피그마: 320 */
-  margin-right: 56px; /* 피그마: 56 */
+  width: 480px;
+  height: 320px;
+  margin-right: 56px;
 }
 
 .baby-schema-image img {
@@ -1526,9 +1507,9 @@ root {
 
 .baby-schema-text {
   display: grid;
-  grid-template-columns: 360px 360px; /* 피그마: 360 + 360 */
-  gap: 24px; /* 피그마: 24 */
-  padding-top: 8px; /* 스샷처럼 텍스트가 살짝 내려앉게 */
+  grid-template-columns: 360px 360px;
+  gap: 24px;
+  padding-top: 8px;
 }
 
 .baby-schema-text p {
@@ -1538,13 +1519,12 @@ root {
   color: #111;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-section {
     padding: 0 20px;
   }
   .baby-schema-text {
-    grid-template-columns: 1fr 1fr; /* 좁아지면 유동 */
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (width <= 900px) {
@@ -1566,27 +1546,25 @@ root {
     padding-top: 0;
   }
 }
-/* 전체 섹션 */
+
 .baby-schema-analysis {
   max-width: 1280px;
   padding: 0;
-  margin: 120px auto 0; /* ⬅️ 위 콘텐츠와 120px */
+  margin: 120px auto 0;
 }
 
-/* 내부 레이아웃 */
 .baby-schema-analysis-inner {
   display: flex;
-  gap: 32px; /* 피그마: 32 */
+  gap: 32px;
   align-items: stretch;
 }
 
-/* 왼쪽: 6컷 이미지 */
 .analysis-image-left {
   flex-shrink: 0;
-  width: 624px; /* 피그마 기준 */
+  width: 624px;
   height: 740px;
   background: #fff;
-  border: 1px solid #d0d0d0; /* 피그마 테두리 */
+  border: 1px solid #d0d0d0;
 }
 
 .analysis-image-left img {
@@ -1597,7 +1575,6 @@ root {
   object-fit: contain;
 }
 
-/* 오른쪽: 얼굴 비율 강조 이미지 */
 .analysis-image-right {
   flex: 1;
   height: 740px;
@@ -1613,7 +1590,6 @@ root {
   object-fit: contain;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-analysis {
     padding: 0 20px;
@@ -1636,20 +1612,18 @@ root {
 .baby-schema-meaning {
   max-width: 1280px;
   padding: 0;
-  margin: 120px auto 0; /* ⬅ 위 콘텐츠와 120px */
+  margin: 120px auto 180px;
 }
 
-/* 내부 정렬 */
 .baby-schema-meaning-inner {
   display: flex;
   align-items: flex-start;
-  width: 1008px; /* 피그마 기준 */
+  width: 1008px;
 }
 
-/* 제목 */
 .baby-schema-meaning-title {
   flex-shrink: 0;
-  width: 254px; /* Hug 느낌 고정 */
+  width: 254px;
   margin: 0;
   font-size: 32px;
   font-weight: 800;
@@ -1657,17 +1631,15 @@ root {
   letter-spacing: -0.02em;
 }
 
-/* 본문 */
 .baby-schema-meaning-text {
   width: 634px;
-  margin-top: 4px; /* 베이스라인 살짝 맞춤 */
-  margin-left: 120px; /* 피그마: 제목과 본문 간격 */
+  margin-top: 4px;
+  margin-left: 120px;
   font-size: 18px;
   line-height: 1.75;
   color: #111;
 }
 
-/* 반응형 */
 @media (width <= 1280px) {
   .baby-schema-meaning {
     padding: 0 20px;
@@ -1686,12 +1658,11 @@ root {
     margin-left: 0;
   }
 }
-/* 텍스트블록 -> 이미지 간격 120px */
+
 .kawaii-image-wrap {
   margin-top: 120px;
 }
 
-/* 1440x580 */
 .kawaii-image {
   display: block;
   width: 100%;
@@ -1740,7 +1711,6 @@ root {
   transform: scale(1.03);
 }
 
-/* 페이지 배경 */
 body {
   color: #000;
   background-color: #0b0b0b;
@@ -1752,31 +1722,26 @@ body {
   background-color: #0b0b0b;
 }
 
-/* 1440 프레임 */
 .frame-1440 {
   width: 1280px;
   margin: 0 auto;
 }
 
-/* ✅ 피그마 마진 80 => 내부 컨텐츠 1280 */
 .content-1280 {
   width: 1280px;
   margin: 0 auto;
 }
 
-/* 섹션 여백 */
 .black-schema-section {
   padding: 80px 0 0;
 }
 
-/* ✅ 여기서 좌우 padding 제거! (1280 안에 이미 들어왔으니까) */
 .baby-schema-layout {
   display: flex;
   gap: 64px;
   align-items: flex-start;
 }
 
-/* 타이틀/본문은 그대로 */
 .baby-schema-title {
   flex: 0 0 243px;
   margin: 0;
@@ -1790,7 +1755,7 @@ body {
 .section-divider {
   width: 100%;
   height: 1px;
-  margin-bottom: 36px; /* 선 ↔ 본문 간격 */
+  margin-bottom: 36px;
   background: rgba(255, 255, 255, 0.35);
 }
 
@@ -1802,18 +1767,17 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* 반응형: 화면이 작아지면 1440/1280 둘 다 fluid */
 @media (width <= 1440px) {
   .frame-1440 {
     width: 100%;
   }
   .content-1280 {
-    width: calc(100% - 160px); /* 좌우 80 유지 */
+    width: calc(100% - 160px);
   }
 }
 @media (width <= 900px) {
   .content-1280 {
-    width: calc(100% - 80px); /* 모바일에서 좀 줄임 */
+    width: calc(100% - 80px);
   }
   .baby-schema-layout {
     flex-direction: column;
@@ -1827,13 +1791,11 @@ body {
   padding-top: 120px;
 }
 
-/* ✅ 2컬럼 전체(400+30+400=830)를 우측 정렬 */
 .detail-wrap {
   width: 830px;
-  margin-left: auto; /* 핵심: 1280 안에서 오른쪽으로 붙음 */
+  margin-left: auto;
 }
 
-/* ✅ 컬럼 폭 고정: 캡쳐의 400px Hug 느낌 */
 .detail-grid {
   display: grid;
   grid-template-columns: 400px 400px;
@@ -1848,7 +1810,6 @@ body {
   line-height: 1.3;
 }
 
-/* 캡쳐처럼 타이틀 아래 길게 선 (각 컬럼 400에 맞춤) */
 .detail-divider {
   width: 400px;
   height: 1px;
@@ -1863,7 +1824,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* 반응형 */
 @media (width <= 1440px) {
   .detail-wrap {
     width: 830px;
@@ -1882,23 +1842,21 @@ body {
     width: 100%;
   }
 }
-/* 아래쪽 반복 섹션 (초유인자극 / 카와이자극) */
+
 .research-row-section1 {
-  padding-top: 120px; /* 섹션 사이 간격 - 필요하면 조절 */
+  padding-top: 120px;
 }
 
 .research-row-section2 {
-  padding-top: 120px; /* 섹션 사이 간격 - 필요하면 조절 */
+  padding-top: 120px;
 }
 
-/* 좌 타이틀 + 우 본문 구조 */
 .research-row {
   display: flex;
   gap: 64px;
   align-items: flex-start;
 }
 
-/* 왼쪽 큰 타이틀 (맨위 베이비스키마와 동일하게) */
 .research-row-title {
   flex: 0 0 243px;
   margin: 0;
@@ -1909,7 +1867,6 @@ body {
   letter-spacing: -0.02em;
 }
 
-/* 오른쪽 본문 영역 */
 .research-row-body {
   flex: 1;
   min-width: 0;
@@ -1922,7 +1879,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* 반응형 */
 @media (width <= 900px) {
   .research-row {
     flex-direction: column;
@@ -1932,13 +1888,12 @@ body {
     flex: none;
   }
 }
-/* 위 섹션과 간격 120px */
+
 .baby-schema-image-strip {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 180px;
 }
 
-/* 1280x328 안에 420x328 3개 + gap 10px 2개 */
 .img-strip {
   display: flex;
   gap: 10px;
@@ -1946,7 +1901,6 @@ body {
   height: 328px;
 }
 
-/* 프레임(패널) 고정 사이즈 */
 .panel {
   box-sizing: border-box;
   display: flex;
@@ -1954,7 +1908,7 @@ body {
   justify-content: center;
   width: 420px;
   height: 328px;
-  background: #000; /* 프레임 바깥 느낌 */
+  background: #000;
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
@@ -1964,7 +1918,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #fff; /* ← 이게 핵심 */
+  background: #fff;
 }
 
 .panel-inner img {
@@ -1975,24 +1929,22 @@ body {
   object-fit: contain;
 }
 
-/* 이미지가 프레임 꽉 차게 */
 .panel img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain; /* 캡쳐처럼 꽉 채우기 */
+  object-fit: contain;
   -o-object-position: center;
   object-position: center;
 }
 
-/* 반응형(선택) */
 @media (width <= 1440px) {
   .img-strip {
     width: 100%;
   }
   .panel {
-    width: calc((100% - 20px) / 3); /* gap 10*2 */
+    width: calc((100% - 20px) / 3);
   }
 }
 .panel {
@@ -2002,33 +1954,30 @@ body {
   margin: 0;
   overflow: hidden;
   background: #000;
-  /* ✅ 추가 */
+
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 :root {
-  --left-col: 360px; /* ✅ 여기 값만 피그마에 맞게 조절하면 전체가 딱 맞음 */
-  --col-gap: 56px; /* 위에서 쓰던 gap */
+  --left-col: 360px;
+  --col-gap: 56px;
 }
 
 .kawaii-section {
   background: #0b0b0f;
 }
 
-/* 1440 캔버스 + 좌우 80 = 내용폭 1280 */
 .kawaii-inner {
   max-width: 1440px;
-  padding: 80px 80px 0; /* 네비 아래 80px이면: 섹션 시작이 네비 바로 아래라는 가정 */
+  padding: 80px 80px 0;
   margin: 0 auto;
 }
 
-/* 선 */
 .kawaii-line {
   height: 1px;
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* 선 아래 36px */
 .kawaii-row {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
@@ -2038,7 +1987,6 @@ body {
   margin-top: 36px;
 }
 
-/* 왼쪽 타이틀 */
 .kawaii-title1 {
   margin: 0;
   font-size: 44px;
@@ -2048,17 +1996,14 @@ body {
   white-space: nowrap;
 }
 
-/* 오른쪽 본문 */
 .kawaii-body {
   max-width: 760px;
   margin: 0;
   font-size: 18px;
   line-height: 1.9;
   color: rgba(255, 255, 255, 0.8);
-  /* margin-left:auto 제거 */
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .kawaii-inner {
     padding: 80px 24px 0;
@@ -2076,25 +2021,23 @@ body {
     margin-left: 0;
   }
 }
-/* 위 섹션과 120px 간격 */
+
 .kawaii-detail {
   margin-top: 120px;
 }
 
 .kawaii-inner1 {
   max-width: 1440px;
-  padding: 0 80px; /* 1440에서 좌우 80 => 1280 */
+  padding: 0 80px;
   margin: 0 auto;
 }
 
-/* 좌(이미지) + 우(텍스트) */
 .kawaii-detail-row {
   display: flex;
-  gap: 80px; /* 이미지-텍스트 간격 80 */
+  gap: 80px;
   align-items: flex-start;
 }
 
-/* 이미지 620x440 */
 .kawaii-detail-media {
   width: 620px;
   height: 440px;
@@ -2110,12 +2053,10 @@ body {
   object-fit: cover;
 }
 
-/* 텍스트 박스 400 */
 .kawaii-detail-text {
   width: 400px;
 }
 
-/* 타이틀 */
 .kawaii-detail-title {
   margin: 0;
   font-size: 32px;
@@ -2123,16 +2064,13 @@ body {
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* 타이틀 아래 라인 (이미지상으로 타이틀-라인 간격이 살짝 있음) */
 .kawaii-detail-rule {
   height: 1px;
-  margin-top: 16px; /* 타이틀 아래 여백 */
+  margin-top: 16px;
   margin-bottom: 32px;
   background: rgba(255, 255, 255, 0.55);
-  /* 라인 아래(본문까지) 여백 */
 }
 
-/* 본문 */
 .kawaii-detail-body {
   margin: 0;
   font-size: 18px;
@@ -2140,7 +2078,6 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .kawaii-inner {
     padding: 0 24px;
@@ -2158,19 +2095,17 @@ body {
     width: 100%;
   }
 }
-/* 섹션 간격 120px */
+
 .text-blocks {
   margin-top: 120px;
 }
 
-/* 1440 캔버스 */
 .text-blocks-inner {
   max-width: 1440px;
   padding: 0 80px;
   margin: 0 auto;
 }
 
-/* 개별 블록 */
 .text-block {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
@@ -2179,12 +2114,10 @@ body {
   align-items: start;
 }
 
-/* 블록 사이 간격 */
 .text-block + .text-block {
   margin-top: 120px;
 }
 
-/* 왼쪽 타이틀 */
 .text-block-title {
   margin: 0;
   font-size: 32px;
@@ -2193,7 +2126,6 @@ body {
   white-space: nowrap;
 }
 
-/* 오른쪽 본문 */
 .text-block-body {
   max-width: 760px;
   margin: 0;
@@ -2202,7 +2134,6 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* 반응형 */
 @media (width <= 980px) {
   .text-blocks-inner {
     padding: 0 24px;
@@ -2218,18 +2149,16 @@ body {
     max-width: 100%;
   }
 }
-/* 섹션 간격 120px */
+
 .section {
   margin-top: 120px;
 }
 
-/* 1440 캔버스 래퍼 */
 .frame-1440 {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* 1440 * 580 고정 */
 .image-1440 {
   display: block;
   width: 100%;
@@ -2238,12 +2167,10 @@ body {
   object-fit: cover;
 }
 
-/* 텍스트블록 -> 이미지 간격 120px */
 .kawaii-image-wrap {
   margin-top: 120px;
 }
 
-/* 1440x580 */
 .kawaii-image {
   display: block;
   width: 100% !important;
@@ -2291,16 +2218,16 @@ body {
 }
 
 .why-container {
-  max-width: 1280px; /* 1440 - 80*2 */
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .why-text {
-  max-width: 722px; /* Figma Hug */
+  max-width: 722px;
 }
 
 .why-title {
-  margin: 0 0 20px; /* 제목-본문 간격 */
+  margin: 0 0 20px;
   font-size: 44px;
   font-weight: 700;
   line-height: 1.25;
@@ -2312,50 +2239,46 @@ body {
   line-height: 1.6;
 }
 
-/* 리스트 전체: 위아래 구분선 */
 .why-list {
   padding-bottom: 200px;
-  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+  margin-top: 120px;
 }
 
-/* 아이템 하나 */
 .why-item1 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .why-item2 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-/* 텍스트 */
 .why-item__title {
-  margin: 0 0 20px; /* 제목-본문 20 */
+  margin: 0 0 20px;
   font-size: 28px;
   font-weight: 700;
 }
 
 .why-item__desc {
-  max-width: 680px; /* Hug 680 */
-  margin: 0 0 64px; /* 본문-버튼 64 */
+  max-width: 680px;
+  margin: 0 0 64px;
   font-size: 18px;
   line-height: 1.6;
   color: #8c8c8c;
 }
 
-/* 버튼(116 x 41 Hug) */
 .why-item__btn {
   display: inline-flex;
   align-items: center;
@@ -2369,7 +2292,6 @@ body {
   border-radius: 999px;
 }
 
-/* 이미지 영역(522 x 380) */
 .why-item__media {
   display: flex;
   align-items: center;
@@ -2386,7 +2308,6 @@ body {
   object-fit: contain;
 }
 
-/* 상단 가로 라인 + 버튼 영역 */
 .why-list-top {
   position: relative;
   height: 48px;
@@ -2403,7 +2324,6 @@ body {
   transform: translateY(-50%);
 }
 
-/* 버튼 하나 */
 .why-nav-btn {
   display: flex;
   align-items: center;
@@ -2423,7 +2343,6 @@ body {
   margin: 0 auto;
 }
 
-/* 혹시 튀어나오면 강제 */
 .why-item {
   box-sizing: border-box;
   width: 100%;
@@ -2434,16 +2353,16 @@ body {
 }
 
 .why-container {
-  max-width: 80rem; /* 1440 - 80*2 */
+  max-width: 80rem;
   margin: 0 auto;
 }
 
 .why-text {
-  max-width: 45.125rem; /* Figma Hug */
+  max-width: 45.125rem;
 }
 
 .why-title {
-  margin: 0 0 1.25rem; /* 제목-본문 간격 */
+  margin: 0 0 1.25rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.25;
@@ -2460,50 +2379,47 @@ body {
   margin: 0 auto;
 }
 
-/* 리스트 전체: 위아래 구분선 */
 .why-list {
   padding-bottom: 12.5rem;
-  margin-top: 7.5rem; /* (캡처에서 32 보이던 간격 느낌) */
+  margin-top: 7.5rem;
 }
 
-/* 아이템 하나 */
 .why-item1 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .why-item2 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 /* 텍스트 */
 .why-item__title {
-  margin: 0 0 1.25rem; /* 제목-본문 20 */
+  margin: 0 0 1.25rem;
   font-size: 1.75rem;
   font-weight: 700;
 }
 
 .why-item__desc {
-  max-width: 42.5rem; /* Hug 680 */
-  margin: 0 0 4rem; /* 본문-버튼 64 */
+  max-width: 42.5rem;
+  margin: 0 0 4rem;
   font-size: 1.125rem;
   line-height: 1.6;
   color: #8c8c8c;
 }
 
-/* 버튼(116 x 41 Hug) */
 .why-item__btn {
   display: inline-flex;
   align-items: center;
@@ -2517,7 +2433,6 @@ body {
   border-radius: 62.4375rem;
 }
 
-/* 이미지 영역(522 x 380) */
 .why-item__media {
   display: flex;
   align-items: center;
@@ -2534,14 +2449,12 @@ body {
   object-fit: contain;
 }
 
-/* 상단 가로 라인 + 버튼 영역 */
 .why-list-top {
   position: relative;
   height: 3rem;
   margin-bottom: 1.25rem;
 }
 
-/* 버튼 묶음 */
 .why-list-nav {
   position: absolute;
   top: 50%;
@@ -2551,7 +2464,6 @@ body {
   transform: translateY(-50%);
 }
 
-/* 버튼 하나 */
 .why-nav-btn {
   display: flex;
   align-items: center;
@@ -2571,7 +2483,6 @@ body {
   margin: 0 auto;
 }
 
-/* 혹시 튀어나오면 강제 */
 .why-item {
   box-sizing: border-box;
   width: 100%;
@@ -2582,16 +2493,16 @@ body {
 }
 
 .why-container {
-  max-width: 1280px; /* 1440 - 80*2 */
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .why-text {
-  max-width: 722px; /* Figma Hug */
+  max-width: 722px;
 }
 
 .why-title {
-  margin: 0 0 20px; /* 제목-본문 간격 */
+  margin: 0 0 20px;
   font-size: 44px;
   font-weight: 700;
   line-height: 1.25;
@@ -2603,50 +2514,46 @@ body {
   line-height: 1.6;
 }
 
-/* 리스트 전체: 위아래 구분선 */
 .why-list {
   padding-bottom: 200px;
-  margin-top: 120px; /* (캡처에서 32 보이던 간격 느낌) */
+  margin-top: 120px;
 }
 
-/* 아이템 하나 */
 .why-item1 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .why-item2 {
   display: grid;
-  grid-template-columns: 680px 522px; /* 텍스트 680, 이미지 522 */
+  grid-template-columns: 680px 522px;
   -moz-column-gap: 78px;
-  column-gap: 78px; /* 1280 - (680+522) = 78 */
+  column-gap: 78px;
   align-items: start;
-  padding: 32px 0; /* 행 높이감 (필요하면 조절) */
-  border-top: 1px solid #d9d9d9; /* 아이템 구분선 */
-  border-bottom: 1px solid #d9d9d9; /* 아이템 구분선 */
+  padding: 32px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-/* 텍스트 */
 .why-item__title {
-  margin: 0 0 20px; /* 제목-본문 20 */
+  margin: 0 0 20px;
   font-size: 28px;
   font-weight: 700;
 }
 
 .why-item__desc {
-  max-width: 680px; /* Hug 680 */
-  margin: 0 0 64px; /* 본문-버튼 64 */
+  max-width: 680px;
+  margin: 0 0 64px;
   font-size: 18px;
   line-height: 1.6;
   color: #8c8c8c;
 }
 
-/* 버튼(116 x 41 Hug) */
 .why-item__btn {
   display: inline-flex;
   align-items: center;
@@ -2660,7 +2567,6 @@ body {
   border-radius: 999px;
 }
 
-/* 이미지 영역(522 x 380) */
 .why-item__media {
   display: flex;
   align-items: center;
@@ -2677,14 +2583,12 @@ body {
   object-fit: contain;
 }
 
-/* 상단 가로 라인 + 버튼 영역 */
 .why-list-top {
   position: relative;
   height: 48px;
   margin-bottom: 20px;
 }
 
-/* 버튼 묶음 */
 .why-list-nav {
   position: absolute;
   top: 50%;
@@ -2694,7 +2598,6 @@ body {
   transform: translateY(-50%);
 }
 
-/* 버튼 하나 */
 .why-nav-btn {
   display: inline-flex;
   align-items: center;
@@ -2712,7 +2615,6 @@ body {
   margin: 0 auto;
 }
 
-/* 혹시 튀어나오면 강제 */
 .why-item {
   box-sizing: border-box;
   width: 100%;
@@ -2755,10 +2657,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1280px; /* ✅ 1440 - 80*2 */
-  height: 92px; /* 피그마 헤더 높이(필요하면 72/92로 조절) */
-  padding: 0; /* ✅ 좌우 80은 이미 container로 해결하니까 padding 제거 */
-  margin: 0 auto; /* ✅ 가운데 정렬 */
+  width: 1280px;
+  height: 92px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .logo {
@@ -2769,7 +2671,7 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 48px; /* 메뉴 간격(원하는 값으로) */
+  gap: 48px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -2786,13 +2688,13 @@ body {
 }
 
 .hero {
-  position: relative; /* overlay와 글자를 겹치게 하려고 필요 */
-  height: 680px; /* 배너 높이 (피그마 보면서 조절) */
+  position: relative;
+  height: 680px;
   overflow: hidden;
-  /* 배경 이미지 넣기 */
+
   background-image: url("../images/baby1.webp");
   background-position: 60% 40%;
-  background-size: cover; /* 꽉 차게 */
+  background-size: cover;
 }
 
 .hero-overlay {
@@ -2807,7 +2709,7 @@ body {
   left: 50%;
   z-index: 1;
   width: 100%;
-  max-width: 1280px; /* 피그마 기준 */
+  max-width: 1280px;
   color: #fff;
   transform: translateX(-50%);
 }
@@ -2830,33 +2732,28 @@ body {
   margin: 0 auto;
 }
 
-/* ===== 히어로 아래 섹션 ===== */
 .intro {
-  padding-top: 120px; /* 너가 말한 “상단 120px 차이”  /* 아래도 비슷하게 주면 안정적 */
+  padding-top: 120px;
   background: #fff;
 }
 
-/* 왼쪽+오른쪽 2단 배치 */
 .intro-inner {
   display: flex;
-  gap: 100px; /* 피그마에서 여백 주로 80~120 쓰는데, 일단 100 */
-  align-items: center; /* 세로 중앙 느낌 */
+  gap: 100px;
+  align-items: center;
 }
 
-/* 왼쪽 텍스트 프레임 (피그마 550) */
 .intro-text {
   width: 550px;
 }
 
-/* 제목 */
 .intro-title {
-  margin: 0 0 20px; /* 제목-본문 간격 20 */
-  font-size: 32px; /* 피그마 크기에 맞춰 조절 */
+  margin: 0 0 20px;
+  font-size: 32px;
   line-height: 1.2;
   color: #222;
 }
 
-/* 본문 */
 .intro-desc {
   margin: 0;
   font-size: 18px;
@@ -2864,11 +2761,10 @@ body {
   color: #222;
 }
 
-/* 본문 아래 버튼까지 100px */
 .btn-outline {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 100px; /* 피그마에서 표시된 100 */
+  margin-top: 100px;
   font-size: 18px;
   color: #666;
   text-decoration: none;
@@ -2876,7 +2772,6 @@ body {
   border-radius: 999px;
 }
 
-/* 오른쪽 이미지 영역: 남는 공간을 다 먹음 */
 .intro-media {
   flex: 1;
 }
@@ -2885,25 +2780,22 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 4px; /* 필요 없으면 삭제 */
+  border-radius: 4px;
 }
 
-/* ===== 연구자료 섹션 ===== */
 .research {
-  /* “위 섹션의 가장 밑 라인 기준 120px 간격” */
   padding-top: 120px;
   padding-bottom: 120px;
   color: #fff;
   background: #fff;
 }
 
-/* 제목/설명 영역 */
 .research-head {
-  max-width: 633px; /* 스샷에서 텍스트 프레임이 633 Hug로 보임 */
+  max-width: 633px;
 }
 
 .research-title {
-  margin: 0 0 20px; /* 제목-본문 간격 20 */
+  margin: 0 0 20px;
   font-size: 32px;
   line-height: 1.2;
   color: #000;
@@ -2916,44 +2808,40 @@ body {
   color: #222;
 }
 
-/* 텍스트 아래 이미지줄까지 간격(스샷에 48 표시) */
 .research-grid {
   display: grid;
-  grid-template-columns: 420px 1fr 1fr; /* 왼쪽 420 고정 + 나머지 2개 유동 */
-  gap: 24px; /* 카드 사이 간격(피그마 보고 조절) */
+  grid-template-columns: 420px 1fr 1fr;
+  gap: 24px;
   align-items: stretch;
   margin-top: 48px;
 }
 
-/* 이미지 카드 공통 */
 .research-card {
-  overflow: hidden; /* 테두리 안에서 잘리게 */
+  overflow: hidden;
   background: #fff;
-  border: 1px solid #ddd; /* 피그마에 테두리 느낌 있으면 유지 */
+  border: 1px solid #ddd;
 }
 
-/* 가운데 카드만 “왼쪽 여백 10px” 반영(스샷의 10) */
 .research-card--mid {
   padding-left: 10px;
 }
 
-/* 이미지가 카드 안에서 꽉 차게 */
 .research-card img {
   display: block;
   width: 100%;
-  height: 328px; /* 스샷에 420×328, 중앙도 비슷 높이로 맞추기 */
+  height: 328px;
   -o-object-fit: cover;
-  object-fit: cover; /* 찌그러지지 않게 */
+  object-fit: cover;
 }
 
 .kawaii {
   position: relative;
   display: flex;
-  align-items: center; /* 세로 중앙 배치 */
-  justify-content: center; /* 가로 중앙 배치 */
+  align-items: center;
+  justify-content: center;
   height: 440px;
   overflow: hidden;
-  background-image: url("../images/tokyo1.jpg"); /* 경로는 너꺼로 */
+  background-image: url("../images/tokyo1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2964,17 +2852,16 @@ body {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* ⭐ 여기서 핵심: absolute 금지, flex 흐름에 태우기 */
 .kawaii-content {
-  position: relative; /* absolute 절대 X */
+  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; /* ✅ 제목/본문/버튼 덩어리 자체가 가운데 */
+  align-items: center;
   width: 1280px, 100%;
   padding: 0 24px;
   color: #fff;
-  text-align: center; /* ✅ 글자 가운데 */
+  text-align: center;
 }
 
 .kawaii-title {
@@ -2984,7 +2871,7 @@ body {
 }
 
 .kawaii-desc {
-  max-width: 720px; /* ✅ 이게 “2줄 느낌” 만드는 핵심 */
+  max-width: 720px;
   margin: 0 0 20px;
   font-size: 18px;
   line-height: 1.7;
@@ -3005,12 +2892,11 @@ body {
 ********
 ********************* */
 .cute {
-  padding-top: 120px; /* 위 섹션과 120px */
+  padding-top: 120px;
   padding-bottom: 120px;
   background: #fff;
 }
 
-/* 제목 + 화살표 */
 .cute-head {
   display: flex;
   align-items: center;
@@ -3026,7 +2912,7 @@ body {
 
 .cute-nav {
   display: flex;
-  gap: 28px; /* 피그마에서 28 */
+  gap: 28px;
 }
 
 .cute-arrow {
@@ -3034,7 +2920,7 @@ body {
   height: 44px;
   font-size: 32px;
   line-height: 1;
-  color: #111; /* ✅ 글자색 */
+  color: #111;
   cursor: pointer;
   background: transparent;
   border: 1px solid #111;
@@ -3056,16 +2942,14 @@ body {
   object-fit: cover;
 }
 
-/* 2칼럼 */
 .cute-body {
   display: grid;
-  grid-template-columns: 602px 1fr; /* 왼쪽 602 고정, 오른쪽 자동 */
-  gap: 48px; /* 칼럼 사이 간격(없으면 32~48로 조절) */
+  grid-template-columns: 602px 1fr;
+  gap: 48px;
   align-items: start;
-  margin-top: 20px; /* 제목 -> 컨텐츠 간격 48 */
+  margin-top: 20px;
 }
 
-/* 왼쪽 이미지 */
 .cute-image {
   display: block;
   width: 602px;
@@ -3074,14 +2958,12 @@ body {
   object-fit: cover;
 }
 
-/* 오른쪽 카드(아코디언 영역) */
 .cute-card {
   min-height: 400px;
   background: #fff;
   border: 1px solid #fff;
 }
 
-/* 아코디언 행 */
 .acc-item {
   padding: 12px 0;
   border-top: 0.0625px solid #ddd;
@@ -3105,7 +2987,7 @@ body {
 }
 
 .acc-title {
-  font-size: 24px; /* 피그마 느낌 */
+  font-size: 24px;
   font-weight: 800;
   color: #111;
 }
@@ -3113,22 +2995,21 @@ body {
 .acc-icon {
   display: grid;
   place-items: center;
-  width: 36px; /* 피그마에서 36x36 */
+  width: 36px;
   height: 36px;
   font-size: 32px;
   color: #111;
 }
 
 .acc-panel {
-  max-height: 0; /* 기본은 닫힘 */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 250ms ease;
 }
 
-/* 열린 내용 */
 .acc-content {
   max-width: 520px;
-  margin: 20px 0 0; /* 제목-본문 간격 20 */
+  margin: 20px 0 0;
   font-size: 18px;
   line-height: 1.8;
   color: #333;
@@ -3141,4 +3022,35 @@ body {
 .research {
   color: #111;
   background: #fff;
+}
+
+.site-footer {
+  background: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+  padding: 48px 0;
+}
+
+.site-footer .footer-inner {
+  width: min(1280px, calc(100% - 160px)); /* 1440에서 양쪽 80 */
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.site-footer .footer-left p {
+  margin: 0 0 10px;
+  color: #111;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.site-footer .footer-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.site-footer .footer-copy {
+  color: #666;
 }
