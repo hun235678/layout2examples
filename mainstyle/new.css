@@ -3054,3 +3054,31 @@ body {
 .site-footer .footer-copy {
   color: #666;
 }
+
+.research-card {
+  position: relative; /* 이거 추가 */
+}
+
+.research-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.research-card:hover .research-overlay {
+  opacity: 1;
+}
